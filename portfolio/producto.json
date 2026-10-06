@@ -1,0 +1,44 @@
+{
+  "slug": "portfolio",
+  "codigo": "CAE",
+  "titulo": "Caída estelar",
+  "subtitulo": "Portfolio personal de una sola página con scroll narrativo, galería de proyectos en hélice 3D y contacto con un robot interactivo.",
+  "categoria": "web",
+  "stack": [
+    "Next.js 16",
+    "React 19",
+    "Tailwind v4",
+    "Motion",
+    "Lenis",
+    "three.js + R3F",
+    "Spline"
+  ],
+  "precio": 29,
+  "precioBorrador": true,
+  "dificultad": "baja",
+  "tiempoInstalacion": "30-60 min con agente · 1,5-3 h en chat",
+  "requisitos": [
+    "Una IA: agente (Claude Code, Cursor, Windsurf, Codex) o chat (claude.ai, ChatGPT)",
+    "Node.js 20 o superior y cuenta gratis de Vercel (y de GitHub)",
+    "Nombre, una frase, un párrafo sobre ti, email y redes",
+    "De 3 a 8 proyectos con capturas"
+  ],
+  "preguntas": 25,
+  "publicado": true,
+  "stripePaymentLink": "",
+  "captura": "",
+  "faq": [
+    {
+      "p": "Todavía no tengo proyectos. ¿Lo compro?",
+      "r": "Mejor espera a tener al menos 3 con capturas: la galería es el centro de la página."
+    },
+    {
+      "p": "¿Va bien en el móvil?",
+      "r": "Es pesada a propósito (WebGL, three.js, Spline). Va fluida en móviles actuales; en los antiguos puede ir a saltos."
+    },
+    {
+      "p": "¿Necesita backend o base de datos?",
+      "r": "No. Todo el contenido vive en dos archivos TypeScript y se despliega gratis en Vercel."
+    }
+  ]
+}

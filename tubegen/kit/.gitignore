@@ -1,0 +1,7 @@
+node_modules
+out
+jobs/*
+!jobs/.gitkeep
+.env
+secrets
+!jobs/ejemplo-nube

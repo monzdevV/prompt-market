@@ -1,0 +1,725 @@
+{
+  "id": "ejemplo-nube-short",
+  "channelName": "Curiosidad Máxima",
+  "theme": {
+    "bg": "#13110f",
+    "fg": "#f3ede2",
+    "muted": "#b8b0a3",
+    "accent": "#ff5b1f",
+    "accent2": "#8fb3a4"
+  },
+  "musicVolume": 0.06,
+  "title": "Una nube pesa 500 toneladas (y no se cae)",
+  "captions": true,
+  "endScreen": false,
+  "scenes": [
+    {
+      "text": "Una nube pequeña pesa quinientas toneladas.",
+      "visual": {
+        "kind": "hook",
+        "headline": "500 toneladas flotando",
+        "emphasis": "500 toneladas"
+      },
+      "mediaQuery": "cumulus cloud blue sky",
+      "audio": "audio/short-000.mp3",
+      "duration": 3.192,
+      "words": [
+        {
+          "text": "Una",
+          "start": 0.1,
+          "end": 0.371
+        },
+        {
+          "text": "nube",
+          "start": 0.383,
+          "end": 0.607
+        },
+        {
+          "text": "pequeña",
+          "start": 0.619,
+          "end": 0.984
+        },
+        {
+          "text": "pesa",
+          "start": 0.996,
+          "end": 1.256
+        },
+        {
+          "text": "quinientas",
+          "start": 1.267,
+          "end": 1.692
+        },
+        {
+          "text": "toneladas",
+          "start": 1.704,
+          "end": 2.376
+        }
+      ]
+    },
+    {
+      "text": "Un cúmulo típico ocupa un kilómetro cúbico, con medio gramo de agua en cada metro cúbico. Multiplica: quinientas toneladas, como cien elefantes.",
+      "visual": {
+        "kind": "stat",
+        "headline": "Como cien elefantes",
+        "emphasis": "cien elefantes",
+        "label": "Agua de un cúmulo",
+        "value": 500,
+        "decimals": 0,
+        "prefix": "",
+        "suffix": " t"
+      },
+      "mediaQuery": "african elephant herd",
+      "audio": "audio/short-001.mp3",
+      "duration": 9.936,
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.099,
+          "end": 0.334
+        },
+        {
+          "text": "cúmulo",
+          "start": 0.346,
+          "end": 0.653
+        },
+        {
+          "text": "típico",
+          "start": 0.665,
+          "end": 1.066
+        },
+        {
+          "text": "ocupa",
+          "start": 1.077,
+          "end": 1.408
+        },
+        {
+          "text": "un",
+          "start": 1.419,
+          "end": 1.537
+        },
+        {
+          "text": "kilómetro",
+          "start": 1.549,
+          "end": 1.997
+        },
+        {
+          "text": "cúbico",
+          "start": 2.009,
+          "end": 2.469
+        },
+        {
+          "text": "con",
+          "start": 2.646,
+          "end": 2.799
+        },
+        {
+          "text": "medio",
+          "start": 2.811,
+          "end": 3.082
+        },
+        {
+          "text": "gramo",
+          "start": 3.094,
+          "end": 3.365
+        },
+        {
+          "text": "de",
+          "start": 3.377,
+          "end": 3.483
+        },
+        {
+          "text": "agua",
+          "start": 3.495,
+          "end": 3.719
+        },
+        {
+          "text": "en",
+          "start": 3.731,
+          "end": 3.825
+        },
+        {
+          "text": "cada",
+          "start": 3.837,
+          "end": 4.025
+        },
+        {
+          "text": "metro",
+          "start": 4.037,
+          "end": 4.285
+        },
+        {
+          "text": "cúbico",
+          "start": 4.297,
+          "end": 4.827
+        },
+        {
+          "text": "Multiplica",
+          "start": 5.64,
+          "end": 6.418
+        },
+        {
+          "text": "quinientas",
+          "start": 6.701,
+          "end": 7.102
+        },
+        {
+          "text": "toneladas",
+          "start": 7.114,
+          "end": 7.668
+        },
+        {
+          "text": "como",
+          "start": 7.892,
+          "end": 8.151
+        },
+        {
+          "text": "cien",
+          "start": 8.163,
+          "end": 8.352
+        },
+        {
+          "text": "elefantes",
+          "start": 8.364,
+          "end": 9.107
+        }
+      ]
+    },
+    {
+      "text": "¿Y por qué no se cae? En realidad sí cae, pero cada gotita mide diez micras y baja a un centímetro por segundo.",
+      "visual": {
+        "kind": "fact",
+        "headline": "Sí cae, pero muy despacio",
+        "emphasis": "muy despacio"
+      },
+      "mediaQuery": null,
+      "audio": "audio/short-002.mp3",
+      "duration": 7.536,
+      "words": [
+        {
+          "text": "Y",
+          "start": 0.1,
+          "end": 0.265
+        },
+        {
+          "text": "por",
+          "start": 0.277,
+          "end": 0.43
+        },
+        {
+          "text": "qué",
+          "start": 0.442,
+          "end": 0.536
+        },
+        {
+          "text": "no",
+          "start": 0.548,
+          "end": 0.654
+        },
+        {
+          "text": "se",
+          "start": 0.666,
+          "end": 0.772
+        },
+        {
+          "text": "cae",
+          "start": 0.784,
+          "end": 1.208
+        },
+        {
+          "text": "En",
+          "start": 2.018,
+          "end": 2.23
+        },
+        {
+          "text": "realidad",
+          "start": 2.242,
+          "end": 2.631
+        },
+        {
+          "text": "sí",
+          "start": 2.643,
+          "end": 2.808
+        },
+        {
+          "text": "cae",
+          "start": 2.82,
+          "end": 3.103
+        },
+        {
+          "text": "pero",
+          "start": 3.35,
+          "end": 3.527
+        },
+        {
+          "text": "cada",
+          "start": 3.539,
+          "end": 3.728
+        },
+        {
+          "text": "gotita",
+          "start": 3.74,
+          "end": 4.07
+        },
+        {
+          "text": "mide",
+          "start": 4.082,
+          "end": 4.306
+        },
+        {
+          "text": "diez",
+          "start": 4.317,
+          "end": 4.553
+        },
+        {
+          "text": "micras",
+          "start": 4.565,
+          "end": 4.954
+        },
+        {
+          "text": "y",
+          "start": 4.966,
+          "end": 5.013
+        },
+        {
+          "text": "baja",
+          "start": 5.025,
+          "end": 5.296
+        },
+        {
+          "text": "a",
+          "start": 5.308,
+          "end": 5.343
+        },
+        {
+          "text": "un",
+          "start": 5.355,
+          "end": 5.485
+        },
+        {
+          "text": "centímetro",
+          "start": 5.497,
+          "end": 6.016
+        },
+        {
+          "text": "por",
+          "start": 6.027,
+          "end": 6.169
+        },
+        {
+          "text": "segundo",
+          "start": 6.181,
+          "end": 6.723
+        }
+      ]
+    },
+    {
+      "text": "Mientras tanto, el aire dentro del cúmulo sube a varios metros por segundo. La gotita pierde la carrera.",
+      "visual": {
+        "kind": "compare",
+        "headline": "Una carrera desigual",
+        "emphasis": "desigual",
+        "left": {
+          "label": "La gotita cae",
+          "value": "1 cm/s"
+        },
+        "right": {
+          "label": "El aire sube",
+          "value": "varios m/s"
+        }
+      },
+      "mediaQuery": null,
+      "audio": "audio/short-003.mp3",
+      "duration": 7.224,
+      "words": [
+        {
+          "text": "Mientras",
+          "start": 0.099,
+          "end": 0.558
+        },
+        {
+          "text": "tanto",
+          "start": 0.57,
+          "end": 0.959
+        },
+        {
+          "text": "el",
+          "start": 1.183,
+          "end": 1.313
+        },
+        {
+          "text": "aire",
+          "start": 1.325,
+          "end": 1.537
+        },
+        {
+          "text": "dentro",
+          "start": 1.549,
+          "end": 1.832
+        },
+        {
+          "text": "del",
+          "start": 1.844,
+          "end": 1.985
+        },
+        {
+          "text": "cúmulo",
+          "start": 1.997,
+          "end": 2.351
+        },
+        {
+          "text": "sube",
+          "start": 2.363,
+          "end": 2.622
+        },
+        {
+          "text": "a",
+          "start": 2.634,
+          "end": 2.658
+        },
+        {
+          "text": "varios",
+          "start": 2.669,
+          "end": 2.964
+        },
+        {
+          "text": "metros",
+          "start": 2.976,
+          "end": 3.318
+        },
+        {
+          "text": "por",
+          "start": 3.33,
+          "end": 3.483
+        },
+        {
+          "text": "segundo",
+          "start": 3.495,
+          "end": 4.049
+        },
+        {
+          "text": "La",
+          "start": 4.86,
+          "end": 5.072
+        },
+        {
+          "text": "gotita",
+          "start": 5.084,
+          "end": 5.461
+        },
+        {
+          "text": "pierde",
+          "start": 5.473,
+          "end": 5.733
+        },
+        {
+          "text": "la",
+          "start": 5.744,
+          "end": 5.827
+        },
+        {
+          "text": "carrera",
+          "start": 5.839,
+          "end": 6.393
+        }
+      ]
+    },
+    {
+      "text": "Y el aire de ese mismo kilómetro cúbico pesa un millón de toneladas. El agua es solo una pizca.",
+      "visual": {
+        "kind": "broll",
+        "headline": "Casi todo es aire",
+        "emphasis": "aire"
+      },
+      "mediaQuery": "clouds aerial view",
+      "audio": "audio/short-004.mp3",
+      "duration": 6.888,
+      "words": [
+        {
+          "text": "Y",
+          "start": 0.099,
+          "end": 0.264
+        },
+        {
+          "text": "el",
+          "start": 0.275,
+          "end": 0.382
+        },
+        {
+          "text": "aire",
+          "start": 0.393,
+          "end": 0.617
+        },
+        {
+          "text": "de",
+          "start": 0.629,
+          "end": 0.747
+        },
+        {
+          "text": "ese",
+          "start": 0.759,
+          "end": 0.959
+        },
+        {
+          "text": "mismo",
+          "start": 0.971,
+          "end": 1.254
+        },
+        {
+          "text": "kilómetro",
+          "start": 1.266,
+          "end": 1.738
+        },
+        {
+          "text": "cúbico",
+          "start": 1.75,
+          "end": 2.127
+        },
+        {
+          "text": "pesa",
+          "start": 2.139,
+          "end": 2.433
+        },
+        {
+          "text": "un",
+          "start": 2.445,
+          "end": 2.551
+        },
+        {
+          "text": "millón",
+          "start": 2.563,
+          "end": 2.834
+        },
+        {
+          "text": "de",
+          "start": 2.846,
+          "end": 2.929
+        },
+        {
+          "text": "toneladas",
+          "start": 2.941,
+          "end": 3.672
+        },
+        {
+          "text": "El",
+          "start": 4.483,
+          "end": 4.695
+        },
+        {
+          "text": "agua",
+          "start": 4.707,
+          "end": 4.942
+        },
+        {
+          "text": "es",
+          "start": 4.954,
+          "end": 5.072
+        },
+        {
+          "text": "solo",
+          "start": 5.084,
+          "end": 5.296
+        },
+        {
+          "text": "una",
+          "start": 5.308,
+          "end": 5.461
+        },
+        {
+          "text": "pizca",
+          "start": 5.473,
+          "end": 6.051
+        }
+      ]
+    },
+    {
+      "text": "Para que llueva, un millón de gotitas tienen que unirse en una sola gota.",
+      "visual": {
+        "kind": "stat",
+        "headline": "Gotitas por gota de lluvia",
+        "emphasis": "Gotitas",
+        "value": 1000000,
+        "decimals": 0,
+        "prefix": "",
+        "suffix": ""
+      },
+      "mediaQuery": null,
+      "audio": "audio/short-005.mp3",
+      "duration": 4.536,
+      "words": [
+        {
+          "text": "Para",
+          "start": 0.1,
+          "end": 0.336
+        },
+        {
+          "text": "que",
+          "start": 0.348,
+          "end": 0.454
+        },
+        {
+          "text": "llueva",
+          "start": 0.466,
+          "end": 0.784
+        },
+        {
+          "text": "un",
+          "start": 1.079,
+          "end": 1.173
+        },
+        {
+          "text": "millón",
+          "start": 1.185,
+          "end": 1.456
+        },
+        {
+          "text": "de",
+          "start": 1.468,
+          "end": 1.539
+        },
+        {
+          "text": "gotitas",
+          "start": 1.55,
+          "end": 1.987
+        },
+        {
+          "text": "tienen",
+          "start": 1.999,
+          "end": 2.27
+        },
+        {
+          "text": "que",
+          "start": 2.282,
+          "end": 2.376
+        },
+        {
+          "text": "unirse",
+          "start": 2.388,
+          "end": 2.742
+        },
+        {
+          "text": "en",
+          "start": 2.753,
+          "end": 2.836
+        },
+        {
+          "text": "una",
+          "start": 2.848,
+          "end": 2.989
+        },
+        {
+          "text": "sola",
+          "start": 3.001,
+          "end": 3.249
+        },
+        {
+          "text": "gota",
+          "start": 3.26,
+          "end": 3.72
+        }
+      ]
+    },
+    {
+      "text": "Hasta entonces, la nube sigue ahí, quieta y pesadísima. Así que la próxima vez que mires arriba, recuerda:",
+      "visual": {
+        "kind": "outro",
+        "headline": "Mira arriba",
+        "emphasis": "arriba"
+      },
+      "mediaQuery": "clouds over field",
+      "audio": "audio/short-006.mp3",
+      "duration": 7.8,
+      "words": [
+        {
+          "text": "Hasta",
+          "start": 0.1,
+          "end": 0.407
+        },
+        {
+          "text": "entonces",
+          "start": 0.418,
+          "end": 0.984
+        },
+        {
+          "text": "la",
+          "start": 1.197,
+          "end": 1.326
+        },
+        {
+          "text": "nube",
+          "start": 1.338,
+          "end": 1.586
+        },
+        {
+          "text": "sigue",
+          "start": 1.598,
+          "end": 1.833
+        },
+        {
+          "text": "ahí",
+          "start": 1.845,
+          "end": 2.105
+        },
+        {
+          "text": "quieta",
+          "start": 2.364,
+          "end": 2.6
+        },
+        {
+          "text": "y",
+          "start": 2.612,
+          "end": 2.659
+        },
+        {
+          "text": "pesadísima",
+          "start": 2.671,
+          "end": 3.437
+        },
+        {
+          "text": "Así",
+          "start": 4.247,
+          "end": 4.553
+        },
+        {
+          "text": "que",
+          "start": 4.565,
+          "end": 4.671
+        },
+        {
+          "text": "la",
+          "start": 4.683,
+          "end": 4.777
+        },
+        {
+          "text": "próxima",
+          "start": 4.789,
+          "end": 5.19
+        },
+        {
+          "text": "vez",
+          "start": 5.202,
+          "end": 5.391
+        },
+        {
+          "text": "que",
+          "start": 5.402,
+          "end": 5.497
+        },
+        {
+          "text": "mires",
+          "start": 5.508,
+          "end": 5.78
+        },
+        {
+          "text": "arriba",
+          "start": 5.792,
+          "end": 6.145
+        },
+        {
+          "text": "recuerda",
+          "start": 6.393,
+          "end": 6.983
+        }
+      ]
+    }
+  ]
+}

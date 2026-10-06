@@ -1,0 +1,48 @@
+{
+  "slug": "social-studio",
+  "codigo": "MNY",
+  "titulo": "Manny",
+  "subtitulo": "Mánager de redes con IA en tu ordenador: transcribe tus vídeos, escribe los textos y convierte un TikTok que funciona en tres guiones para tu cuenta.",
+  "categoria": "IA",
+  "stack": [
+    "Next.js 16",
+    "React 19",
+    "Tailwind v4",
+    "SQLite (node:sqlite)",
+    "Python + faster-whisper",
+    "yt-dlp",
+    "Claude Code CLI"
+  ],
+  "precio": 69,
+  "precioBorrador": true,
+  "dificultad": "avanzada",
+  "tiempoInstalacion": "30-60 min con agente · 1,5-3 h en chat",
+  "requisitos": [
+    "Windows 10/11, macOS 12+ o Linux, con 8 GB de RAM y unos 3 GB libres",
+    "Node.js 24 (mínimo 23.8) y Python 3.10-3.12",
+    "Claude Code instalado y con sesión iniciada (plan Pro o Max)",
+    "Una IA para la instalación; lo ideal es un agente"
+  ],
+  "preguntas": 15,
+  "publicado": true,
+  "stripePaymentLink": "",
+  "captura": "",
+  "faq": [
+    {
+      "p": "¿Funciona en un servidor?",
+      "r": "El estudio sí, pero Manny piensa con la sesión de Claude Code de tu ordenador. En un servidor necesitarías una clave de API de pago y adaptar un archivo."
+    },
+    {
+      "p": "¿Gasta de mi suscripción de Claude?",
+      "r": "Sí. Cada guion, idea o respuesta consume parte del límite de tu plan. Con Pro puedes llegar al límite en sesiones intensas."
+    },
+    {
+      "p": "¿Publica en redes directamente?",
+      "r": "No de serie. Necesitas una clave de Upload-Post (de pago) o tus propias apps aprobadas por Meta, Google y TikTok."
+    },
+    {
+      "p": "Mi nicho no es el fitness. ¿Me sirve?",
+      "r": "Sí, pero el contenido de partida es de fitness. La IA lo vacía o lo reescribe y no inventa referencias: la biblioteca empezará vacía hasta que añadas las tuyas."
+    }
+  ]
+}

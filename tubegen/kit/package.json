@@ -1,0 +1,46 @@
+{
+  "name": "tubegen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Automatización de canal de YouTube: guion (Claude) → voz (edge-tts/ElevenLabs) → vídeo (Remotion) → subida (YouTube Data API)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "ideas": "node pipeline/ideas.mjs",
+    "outliers": "node pipeline/outliers.mjs",
+    "script": "node pipeline/script.mjs",
+    "voice": "node pipeline/voice.mjs",
+    "render": "node pipeline/render.mjs",
+    "upload": "node pipeline/upload.mjs",
+    "auth": "node pipeline/auth.mjs",
+    "make": "node pipeline/run.mjs",
+    "daily": "node pipeline/daily.mjs",
+    "typecheck": "tsc --noEmit",
+    "stats": "node pipeline/stats.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.129.0",
+    "@remotion/bundler": "^4.0.529",
+    "@remotion/cli": "^4.0.529",
+    "@remotion/google-fonts": "^4.0.529",
+    "@remotion/media": "^4.0.529",
+    "@remotion/media-utils": "^4.0.529",
+    "@remotion/renderer": "^4.0.529",
+    "@remotion/transitions": "^4.0.529",
+    "@remotion/zod-types": "^4.0.529",
+    "dotenv": "^18.0.4",
+    "googleapis": "^182.0.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.529",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.2.7",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "ice-gym",
+  "codigo": "IGY",
+  "titulo": "Ice Gym",
+  "subtitulo": "Web de gimnasio con estética de retransmisión deportiva y un CRM comercial completo, con tus centros, tarifas y clases.",
+  "categoria": "web",
+  "stack": [
+    "Next.js 16",
+    "React 19",
+    "Tailwind v4",
+    "Supabase",
+    "Vercel"
+  ],
+  "precio": 79,
+  "precioBorrador": true,
+  "dificultad": "media",
+  "tiempoInstalacion": "20-40 min con agente · 1-2 h en chat",
+  "requisitos": [
+    "Una IA: agente (Claude Code, Cursor, Windsurf, Codex) o chat (claude.ai, ChatGPT)",
+    "Node.js 20 o superior",
+    "Cuentas gratis de Supabase y Vercel",
+    "Tus centros, tarifas, horario de clases y, si las tienes, fotos"
+  ],
+  "preguntas": 25,
+  "publicado": true,
+  "stripePaymentLink": "",
+  "captura": "",
+  "faq": [
+    {
+      "p": "¿Sirve para una cadena con varios centros?",
+      "r": "Sí. Está pensada para 1 a 4 centros y 1 a 4 tarifas; cada centro tiene su estado abierto o cerrado, su mapa y su horario de clases."
+    },
+    {
+      "p": "¿Las fotos y los datos del CRM vienen de ejemplo?",
+      "r": "Sí. Son de demo y hay que sustituirlos antes de publicar. La IA te pide los tuyos durante la entrevista."
+    },
+    {
+      "p": "¿Cuánto cuesta mantenerlo en marcha?",
+      "r": "Funciona en los planes gratuitos de Supabase y Vercel. Solo pagas el dominio si quieres uno propio."
+    }
+  ]
+}

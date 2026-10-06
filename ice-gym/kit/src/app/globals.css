@@ -1,0 +1,348 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/*
+  Los valores de cada tema los genera src/design/tokens.ts (cssTemas) y el
+  layout los inyecta en el <head>. Aquí sólo se mapean a nombres de Tailwind.
+*/
+@theme inline {
+  --color-fondo: var(--fondo);
+  --color-placa: var(--placa);
+  --color-placa-2: var(--placa-2);
+  --color-linea: var(--linea);
+  --color-tinta: var(--tinta);
+  --color-tinta-2: var(--tinta-2);
+  --color-acento: var(--acento);
+  --color-acento-tinta: var(--acento-tinta);
+  --color-alarma: var(--alarma);
+  --color-alarma-tinta: var(--alarma-tinta);
+  --color-sobre-campo: var(--sobre-campo);
+  --color-dato-azul: var(--dato-azul);
+  --color-dato-bengala: var(--dato-bengala);
+  --color-apagado: var(--apagado);
+  --color-serie-1: var(--serie-1);
+  --color-serie-2: var(--serie-2);
+  --color-serie-3: var(--serie-3);
+  --color-serie-4: var(--serie-4);
+  --color-serie-5: var(--serie-5);
+  --color-exito: var(--exito);
+  --color-aviso: var(--aviso);
+  --color-critico: var(--critico);
+  --color-exito-suave: var(--exito-suave);
+  --color-aviso-suave: var(--aviso-suave);
+  --color-critico-suave: var(--critico-suave);
+  --color-acento-suave: var(--acento-suave);
+  --color-columna: var(--columna);
+  --color-tarjeta: var(--tarjeta);
+  --color-sobre-critico: var(--sobre-critico);
+  --color-sobre-relleno: var(--sobre-relleno);
+  --shadow-placa: var(--sombra);
+
+  /* Nombres que usan los componentes de shadcn */
+  --color-background: var(--fondo);
+  --color-foreground: var(--tinta);
+  --color-card: var(--placa);
+  --color-card-foreground: var(--tinta);
+  --color-popover: var(--placa);
+  --color-popover-foreground: var(--tinta);
+  --color-primary: var(--acento);
+  --color-primary-foreground: var(--sobre-campo);
+  --color-secondary: var(--placa-2);
+  --color-secondary-foreground: var(--tinta);
+  --color-muted: var(--placa-2);
+  --color-muted-foreground: var(--tinta-2);
+  --color-accent: var(--placa-2);
+  --color-accent-foreground: var(--tinta);
+  --color-destructive: var(--alarma);
+  --color-border: var(--linea);
+  --color-input: var(--linea);
+  --color-ring: var(--acento-tinta);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  /* Esquinas rectas en la web; el CRM las redondea redefiniendo --radio-*.
+     Con @theme inline el valor se copia en cada clase, así que tiene que ser
+     una variable para que el CRM pueda cambiarlo en tiempo de ejecución. */
+  --radius-xs: var(--radio-xs, 0px);
+  --radius-sm: var(--radio-sm, 0px);
+  --radius-md: var(--radio-md, 0px);
+  --radius-lg: var(--radio-lg, 0px);
+  --radius-xl: var(--radio-xl, 0px);
+  --radius-2xl: var(--radio-2xl, 0px);
+  --radius-3xl: var(--radio-3xl, 0px);
+
+  --animate-cortina: cortina 0.26s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes cortina {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transform: translateX(-6px);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: none;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--linea);
+    min-width: 0;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--fondo);
+    color: var(--tinta);
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  table,
+  [data-cifra],
+  .cifra {
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: var(--acento);
+    color: var(--sobre-campo);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--acento-tinta);
+    outline-offset: 2px;
+  }
+
+  input,
+  textarea,
+  select {
+    caret-color: var(--acento-tinta);
+  }
+
+  a {
+    text-underline-offset: 3px;
+  }
+}
+
+/* ---------------------------------------------------------------
+   TIPOGRAFÍA · la condensada del logotipo manda
+   --------------------------------------------------------------- */
+
+/* Titulares y rótulos: condensada, gruesa, mayúsculas, en cursiva de retransmisión. */
+.rotulo {
+  font-family: var(--font-display), ui-sans-serif, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+}
+
+/* Nombres, cabeceras de tabla, pestañas y botones: condensada recta. */
+.condensada {
+  font-family: var(--font-display), ui-sans-serif, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+
+/* Etiquetas de dato: condensada media, legible, sin tracking exagerado. */
+.dato {
+  font-family: var(--font-display), ui-sans-serif, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  line-height: 1.1;
+  color: var(--tinta-2);
+}
+
+/* Cifras: condensada 800, tabular, recta para que las columnas cuadren. */
+.cifra {
+  font-family: var(--font-display), ui-sans-serif, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.85;
+}
+
+/* ---------------------------------------------------------------
+   PLACAS · opacas, planas y con el corte inclinado de los rótulos
+   --------------------------------------------------------------- */
+
+.corte-d {
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--corte-placa)) 100%, 0 100%);
+}
+.corte-i {
+  clip-path: polygon(var(--corte-placa) 0, 100% 0, 100% 100%, 0 100%);
+}
+.corte-a {
+  clip-path: polygon(var(--corte-pestana) 0, 100% 0, calc(100% - var(--corte-pestana)) 100%, 0 100%);
+}
+.corte-rotulo {
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--corte-rotulo)) 100%, 0 100%);
+}
+
+/* Textura de ruido: rompe el plano del suelo sin ensuciarlo. */
+.ruido {
+  position: relative;
+  isolation: isolate;
+}
+.ruido::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------------------------------------------------------------
+   CRM · herramienta interna, estética SaaS sobria (independiente de la web)
+   --------------------------------------------------------------- */
+.crm {
+  --font-body: var(--font-crm);
+  /* La condensada del logotipo se queda para cifras y titulares. */
+  --font-display: var(--font-crm-display);
+  --radio-xs: 4px;
+  --radio-sm: 6px;
+  --radio-md: 8px;
+  --radio-lg: 10px;
+  --radio-xl: 14px;
+  --radio-2xl: 18px;
+  --radio-3xl: 24px;
+  font-family: var(--font-crm), ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9375rem;
+  font-feature-settings: "ss01", "cv11";
+}
+.crm .rotulo {
+  font-family: var(--font-crm-display), var(--font-crm), sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: -0.005em;
+  line-height: 1.05;
+}
+.crm .condensada {
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+}
+.crm .dato {
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+}
+/* Cifras: la condensada de la marca, tabular, para que las columnas cuadren. */
+.crm .cifra {
+  font-family: var(--font-crm-display), var(--font-crm), sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  line-height: 0.95;
+}
+.crm :is(.corte-d, .corte-i, .corte-a, .corte-rotulo) {
+  clip-path: none;
+  border-radius: var(--radio-md);
+}
+.crm .ruido::after {
+  display: none;
+}
+
+/* Etiqueta de color: el tono llega en --tono (relleno-azul, relleno-verde…). */
+.crm .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: 1.375rem;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  /* Color sólido y texto blanco. */
+  color: #fff;
+  background: var(--tono, var(--relleno-gris));
+}
+
+/* Barras de desplazamiento del sistema */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--linea) transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--linea);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+   CRM · menú lateral plegable
+   --------------------------------------------------------------- */
+.menu-lateral {
+  width: 16rem;
+  overflow: hidden;
+  transition: width 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu-lateral[data-plegado] {
+  width: 4.25rem;
+}
+.menu-lateral[data-plegado] .etiqueta-menu {
+  display: none;
+}
+.menu-lateral[data-plegado] .cabeza-menu {
+  justify-content: center;
+  padding-inline: 0;
+}
+.menu-lateral[data-plegado] .usuario-menu {
+  background: transparent;
+  padding: 0 0 0 0.5rem;
+}
+
+/* Logos de empresa (PNG sin fondo). En oscuro, un contorno claro finísimo para
+   que los logos negros o azul marino no se pierdan sobre el carbón. */
+.crm .logo-empresa {
+  filter: drop-shadow(0 0 0.6px rgb(255 255 255 / 0.55)) drop-shadow(0 0 1.5px rgb(255 255 255 / 0.18));
+}
+:root[data-tema="claro"] .crm .logo-empresa {
+  filter: none;
+}

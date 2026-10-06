@@ -1,0 +1,1283 @@
+{
+  "productos": [
+    {
+      "slug": "portfolio",
+      "codigo": "CAE",
+      "titulo": "Caída estelar",
+      "subtitulo": "Portfolio personal de una sola página con scroll narrativo, galería de proyectos en hélice 3D y contacto con un robot interactivo.",
+      "categoria": "web",
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind v4",
+        "Motion",
+        "Lenis",
+        "three.js + R3F",
+        "Spline"
+      ],
+      "precio": 29,
+      "precioBorrador": true,
+      "dificultad": "baja",
+      "tiempoInstalacion": "30-60 min con agente · 1,5-3 h en chat",
+      "requisitos": [
+        "Una IA: agente (Claude Code, Cursor, Windsurf, Codex) o chat (claude.ai, ChatGPT)",
+        "Node.js 20 o superior y cuenta gratis de Vercel (y de GitHub)",
+        "Nombre, una frase, un párrafo sobre ti, email y redes",
+        "De 3 a 8 proyectos con capturas"
+      ],
+      "preguntas": 25,
+      "publicado": true,
+      "stripePaymentLink": "",
+      "captura": "",
+      "faq": [
+        {
+          "p": "Todavía no tengo proyectos. ¿Lo compro?",
+          "r": "Mejor espera a tener al menos 3 con capturas: la galería es el centro de la página."
+        },
+        {
+          "p": "¿Va bien en el móvil?",
+          "r": "Es pesada a propósito (WebGL, three.js, Spline). Va fluida en móviles actuales; en los antiguos puede ir a saltos."
+        },
+        {
+          "p": "¿Necesita backend o base de datos?",
+          "r": "No. Todo el contenido vive en dos archivos TypeScript y se despliega gratis en Vercel."
+        }
+      ],
+      "readme": {
+        "h1": "Caída estelar · Portfolio personal con scroll narrativo y 3D",
+        "tipo": "Portfolio personal con scroll narrativo y 3D",
+        "verificacion": "El código fuente con una demo ficticia, listo para `npm ci && npm run dev`",
+        "lema": "Un portfolio de una sola página que se recorre como una historia: una estrella cae por un cielo nocturno mientras bajas, y tus proyectos cuelgan de una doble hélice de ADN en 3D. Lo monta tu propia IA con tus datos.",
+        "intro": [
+          {
+            "t": "p",
+            "texto": "Pegas un prompt, contestas unas 25 preguntas (nombre, frase, proyectos con sus imágenes, redes) y la IA rellena un único archivo de contenido, coloca tus imágenes, comprueba que todo compila y lo publica en Vercel."
+          }
+        ],
+        "secciones": [
+          {
+            "titulo": "Qué incluye",
+            "bloques": [
+              {
+                "t": "sub",
+                "texto": "La página"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Portada «la caída»: cielo con nebulosa en WebGL que sigue al ratón, una doble hélice de partículas que se deshace y una estrella cuya estela se alarga con la velocidad del scroll. Tu nombre gigante en degradado (se ajusta solo a cualquier longitud), un rotador «Construyo …», reloj en vivo, altímetro y marquesina de tecnologías",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Tres frases de tu proceso mientras cae la estrella, y tu frase principal al aterrizar",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "«Sobre mí» con el texto revelándose palabra a palabra y la lista de servicios",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Galería de proyectos en hélice 3D** (three.js): la cámara baja por la hélice y se para en cada proyecto",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "5 maquetaciones más para elegir: apilado, índice fijo, carrete horizontal, cortina y rejilla con filtros",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Ficha de cada caso a pantalla completa, con imágenes enmarcadas como navegador, móvil o página impresa",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Marquesina gigante de herramientas que acelera y cambia de sentido con el scroll",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Contacto con un robot 3D interactivo de Spline **o** una alternativa propia sin dependencias (la estrella posada en órbita), tu email y tus redes abriéndose en abanico",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "SEO listo: título, descripción, Open Graph y Twitter, **imagen para compartir generada** con tu nombre y rol, y **favicon generado** con tu inicial",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Fondo que funde el color entre secciones, scroll suave con Lenis, respeta «reducir movimiento»",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "texto": "**Técnico:** Next.js 16, React 19, Tailwind v4, Motion, Lenis, three.js + React Three Fiber, Spline (opcional). Sin backend ni base de datos: **todo el contenido está en `src/content.ts`**, y las imágenes en `public/proyectos/`. Se despliega gratis en Vercel. Verificado: `npm ci`, `npm run typecheck`, `eslint .` y `next build` pasan."
+              }
+            ]
+          },
+          {
+            "titulo": "Avisos (léelos antes de comprar)",
+            "bloques": [
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "**La demo es ficticia:** «Alex Rivera» y sus 6 proyectos son inventados y sus imágenes son composiciones generadas por un script, sin marcas reales. Sirven para ver la plantilla funcionando, no para publicarlas: hay que poner tu contenido.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Sin proyectos con imágenes, el portfolio luce poco**: la galería es el centro de la página. Si aún no tienes trabajos, espera a tenerlos o empieza con 3.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**El robot del contacto es una escena pública de Spline de un tercero** que se descarga de sus servidores. Puedes usar tu propia escena o desactivarlo (`contacto.robot: false`) y queda una alternativa propia; si la escena falla o la retiran, la alternativa aparece sola.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Es una web **pesada a propósito** (WebGL, three.js y, si lo dejas, Spline): fluida en ordenadores y móviles actuales, pero puede ir a saltos en móviles antiguos. Está pensada para impresionar en una visita, no para posicionar contenido largo en buscadores.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Cambiar la **paleta de colores** es posible, pero está repartida en CSS y shaders: es un cambio delicado que la IA hace en varios archivos.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "El texto está en español; todas las etiquetas están agrupadas en `content.ts` para traducirlas.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Las fuentes son de Google Fonts (licencia OFL); las copias TTF de `kit/assets/fonts/` solo se usan para generar la imagen para compartir y el favicon.",
+                    "nivel": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "vistaPrevia": {
+        "lineas": [
+          "# PROMPT MAESTRO · Portfolio personal «Caída estelar»",
+          "",
+          "> **Cómo se usa:** abre tu IA (Claude Code, Cursor, Windsurf, Codex… o un chat como claude.ai o ChatGPT), pega TODO este texto y envíalo. Ten a mano la carpeta `kit/` que venía con tu compra. La IA te irá preguntando lo que necesita.",
+          "",
+          "---",
+          "",
+          "## 0 · Quién eres y qué vas a hacer",
+          "",
+          "Eres un desarrollador senior especializado en Next.js, animación web y WebGL, y vas a hacer de instalador de esta plantilla. Tu trabajo es entregar al usuario un portfolio personal terminado, probado y publicado:",
+          "",
+          "- **Una sola página** contada con el scroll: una estrella cae por un cielo nocturno con nebulosa en WebGL mientras aparecen el nombre, el rol y tres frases; aterriza y la página se funde en «Sobre mí» (texto que se revela palabra a palabra), una **galería de proyectos en forma de doble hélice de ADN en 3D**, una marquesina gigante de tecnologías que reacciona al scroll y un contacto con **un robot 3D interactivo** (o una estrella posada en órbita, sin dependencias) y las redes que se abren en abanico.",
+          "- Cada proyecto se abre en una **ficha a pantalla completa** con sus imágenes enmarcadas (navegador, móvil o página impresa).",
+          "- Sin backend, sin base de datos y sin claves. **Todo el contenido vive en un archivo: `src/content.ts`.** Las imágenes, en `public/proyectos/`.",
+          "",
+          "Stack fijo: Next.js 16 (App Router, TypeScript), React 19, Tailwind v4, Motion, Lenis, three.js con React Three Fiber y drei, Spline (opcional) y Vercel.",
+          "",
+          "El código está en `kit/` y ya compila. **No reescribas el proyecto: instálalo y personalízalo.** El diseño, las animaciones y la estructura no se tocan. Solo cambian `src/content.ts`, las imágenes y, si el usuario lo pide, los colores.",
+          "",
+          "### Reglas que no te puedes saltar",
+          "",
+          "1. **Pregunta por bloques**, nunca más de 6 preguntas por mensaje. Cada pregunta lleva su valor por defecto entre corchetes; si el usuario responde «vale», «por defecto» o deja algo en blanco, usa ese valor.",
+          "2. **No inventes nada que parezca real**: proyectos, clientes, cifras, años de experiencia, premios, enlaces. Si el usuario no lo da, deja el hueco o quita esa línea, y avísale.",
+          "3. **La demo se va entera.** El kit trae un perfil ficticio («Alex Rivera», `hola@example.com`) y 6 proyectos inventados con imágenes generadas. Nada de eso puede quedar publicado (`PERSONALIZAR.md` §0).",
+          "4. **No sigas sin confirmar**: después de la entrevista enseñas un resumen y esperas un «sí».",
+          "5. **Habla en el idioma del usuario.** La web se queda en español salvo que pida otro idioma (`PERSONALIZAR.md` §10)."
+        ],
+        "total": 138
+      },
+      "paquete": {
+        "contenido": [
+          {
+            "ruta": "README.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 4666,
+            "lineas": 56
+          },
+          {
+            "ruta": "PROMPT.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 11464,
+            "lineas": 138
+          },
+          {
+            "ruta": "PERSONALIZAR.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 10047,
+            "lineas": 145
+          },
+          {
+            "ruta": "SPEC.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 16024,
+            "lineas": 104
+          },
+          {
+            "ruta": "kit/",
+            "tipo": "carpeta",
+            "archivos": 77,
+            "bytes": 1757176,
+            "lineas": 5539
+          }
+        ],
+        "archivos": 81,
+        "bytes": 1799377,
+        "lineasCodigo": 5539
+      }
+    },
+    {
+      "slug": "ice-gym",
+      "codigo": "IGY",
+      "titulo": "Ice Gym",
+      "subtitulo": "Web de gimnasio con estética de retransmisión deportiva y un CRM comercial completo, con tus centros, tarifas y clases.",
+      "categoria": "web",
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind v4",
+        "Supabase",
+        "Vercel"
+      ],
+      "precio": 79,
+      "precioBorrador": true,
+      "dificultad": "media",
+      "tiempoInstalacion": "20-40 min con agente · 1-2 h en chat",
+      "requisitos": [
+        "Una IA: agente (Claude Code, Cursor, Windsurf, Codex) o chat (claude.ai, ChatGPT)",
+        "Node.js 20 o superior",
+        "Cuentas gratis de Supabase y Vercel",
+        "Tus centros, tarifas, horario de clases y, si las tienes, fotos"
+      ],
+      "preguntas": 25,
+      "publicado": true,
+      "stripePaymentLink": "",
+      "captura": "",
+      "faq": [
+        {
+          "p": "¿Sirve para una cadena con varios centros?",
+          "r": "Sí. Está pensada para 1 a 4 centros y 1 a 4 tarifas; cada centro tiene su estado abierto o cerrado, su mapa y su horario de clases."
+        },
+        {
+          "p": "¿Las fotos y los datos del CRM vienen de ejemplo?",
+          "r": "Sí. Son de demo y hay que sustituirlos antes de publicar. La IA te pide los tuyos durante la entrevista."
+        },
+        {
+          "p": "¿Cuánto cuesta mantenerlo en marcha?",
+          "r": "Funciona en los planes gratuitos de Supabase y Vercel. Solo pagas el dominio si quieres uno propio."
+        }
+      ],
+      "readme": {
+        "h1": "Ice Gym · Web + CRM para gimnasios",
+        "tipo": "Web + CRM para gimnasios",
+        "verificacion": "`next build` pasa",
+        "lema": "Una web de gimnasio con estética de retransmisión deportiva y un CRM comercial completo, montados con tus datos por tu propia IA.",
+        "intro": [
+          {
+            "t": "p",
+            "texto": "Pegas un prompt, contestas unas 25 preguntas (nombre, centros, tarifas, clases, colores) y la IA instala, personaliza, crea la base de datos y despliega. El resultado es idéntico a la demo, pero con tu marca."
+          }
+        ],
+        "secciones": [
+          {
+            "titulo": "Qué incluye",
+            "bloques": [
+              {
+                "t": "sub",
+                "texto": "Web pública"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Portada a pantalla completa con parallax y un marcador de horarios de hoy por centro",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Manifiesto con revelado palabra a palabra y marquesina reactiva al scroll",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Galería horizontal de instalaciones",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "«Marcador del club» con cifras calculadas en vivo",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Tarifas con la recomendada destacada",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Centros con estado abierto/cerrado en tiempo real y Google Maps",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Panel de clases tipo aeropuerto, filtrable por centro",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Formulario «Reserva tu visita» que crea leads, con antispam y consentimiento RGPD",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "sub",
+                "texto": "CRM comercial (`/crm`)"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Dashboard con KPIs, embudo y gráficas",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Pipeline Kanban con arrastrar y soltar",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Empresas, contactos, actividades y tareas",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Búsqueda ⌘K",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Tema claro y oscuro",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Login de equipo",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "texto": "**Técnico:** Next.js 16, React 19, Tailwind v4, Supabase con RLS y despliegue en Vercel. Funciona en los planes gratis."
+              }
+            ]
+          },
+          {
+            "titulo": "Avisos",
+            "bloques": [
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Las fotos y los datos del CRM son **de ejemplo**: cámbialos antes de publicar.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Pensado para 1-4 centros y 1-4 tarifas.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "El texto de la web está en español; la IA puede traducirlo si se lo pides.",
+                    "nivel": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "vistaPrevia": {
+        "lineas": [
+          "# PROMPT MAESTRO · Web + CRM para gimnasio («Ice Gym»)",
+          "",
+          "> **Cómo se usa:** abre tu IA (Claude Code, Cursor, Windsurf, Codex… o un chat como claude.ai o ChatGPT), pega TODO este texto y envíalo. Ten a mano la carpeta `kit/` que venía con tu compra. La IA te irá preguntando lo que necesita.",
+          "",
+          "---",
+          "",
+          "## 0 · Quién eres y qué vas a hacer",
+          "",
+          "Eres un desarrollador senior especializado en Next.js y Supabase, y vas a hacer de instalador de esta plantilla. Tu trabajo es entregar al usuario, idéntico al original, un proyecto ya terminado y probado:",
+          "",
+          "- **Web pública** de un gimnasio o cadena de gimnasios, con estética de retransmisión deportiva: negro, azul hielo, tipografía condensada en mayúsculas y cortes en diagonal. Incluye portada, manifiesto, cifras, instalaciones, centros, clases, tarifas y un formulario «Reserva tu visita» que crea leads.",
+          "- **CRM comercial B2B** en `/crm`: dashboard con KPIs y gráficas, pipeline Kanban de oportunidades, empresas, contactos, actividades, tareas, configuración del equipo, paleta de comandos (⌘K) y tema claro/oscuro. El acceso es con email y contraseña.",
+          "",
+          "Stack fijo: Next.js 16 (App Router, TypeScript), React 19, Tailwind v4, shadcn/ui personalizado, Motion, Lenis, Recharts/Chart.js, Supabase (Postgres + Auth + RLS) y Vercel.",
+          "",
+          "El código original está en la carpeta `kit/`, que ya compila. **No reescribas el proyecto: instálalo y personalízalo.** El diseño, la estructura y la lógica no se tocan. Solo cambian los datos y los textos de marca, y los colores si el usuario lo pide.",
+          "",
+          "### Reglas que no te puedes saltar",
+          "",
+          "1. **Pregunta por bloques**, nunca más de 6 preguntas por mensaje. Cada pregunta lleva su valor por defecto entre corchetes; si el usuario responde «vale», «por defecto» o deja algo en blanco, usa ese valor.",
+          "2. **No inventes nada que parezca real**: reseñas, número de socios, años de historia, premios, clientes. Si el usuario no lo da, deja el texto neutro de la plantilla o quita esa línea, y avísale.",
+          "3. **Secretos:** pide al usuario que pegue las claves directamente en `.env.local`. No las repitas en el chat ni las escribas en el código. Nunca uses la `service_role` key.",
+          "4. **No sigas sin confirmar**: después de la entrevista enseñas un resumen y esperas un «sí».",
+          "5. **Habla en el idioma del usuario.** La web se queda en español salvo que pida otro idioma; en ese caso, traduce todos los textos visibles.",
+          "6. **Antes de escribir código de Next.js**, lee `kit/AGENTS.md`: esta versión de Next.js tiene cambios que quizá no conozcas, como `proxy.ts` en lugar de `middleware.ts`."
+        ],
+        "total": 145
+      },
+      "paquete": {
+        "contenido": [
+          {
+            "ruta": "README.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 2350,
+            "lineas": 58
+          },
+          {
+            "ruta": "PROMPT.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 13002,
+            "lineas": 145
+          },
+          {
+            "ruta": "PERSONALIZAR.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 7747,
+            "lineas": 97
+          },
+          {
+            "ruta": "SPEC.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 11089,
+            "lineas": 104
+          },
+          {
+            "ruta": "negocio.ejemplo.json",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 2416,
+            "lineas": 78
+          },
+          {
+            "ruta": "kit/",
+            "tipo": "carpeta",
+            "archivos": 211,
+            "bytes": 3072616,
+            "lineas": 23924
+          }
+        ],
+        "archivos": 216,
+        "bytes": 3109220,
+        "lineasCodigo": 23924
+      }
+    },
+    {
+      "slug": "social-studio",
+      "codigo": "MNY",
+      "titulo": "Manny",
+      "subtitulo": "Mánager de redes con IA en tu ordenador: transcribe tus vídeos, escribe los textos y convierte un TikTok que funciona en tres guiones para tu cuenta.",
+      "categoria": "IA",
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind v4",
+        "SQLite (node:sqlite)",
+        "Python + faster-whisper",
+        "yt-dlp",
+        "Claude Code CLI"
+      ],
+      "precio": 69,
+      "precioBorrador": true,
+      "dificultad": "avanzada",
+      "tiempoInstalacion": "30-60 min con agente · 1,5-3 h en chat",
+      "requisitos": [
+        "Windows 10/11, macOS 12+ o Linux, con 8 GB de RAM y unos 3 GB libres",
+        "Node.js 24 (mínimo 23.8) y Python 3.10-3.12",
+        "Claude Code instalado y con sesión iniciada (plan Pro o Max)",
+        "Una IA para la instalación; lo ideal es un agente"
+      ],
+      "preguntas": 15,
+      "publicado": true,
+      "stripePaymentLink": "",
+      "captura": "",
+      "faq": [
+        {
+          "p": "¿Funciona en un servidor?",
+          "r": "El estudio sí, pero Manny piensa con la sesión de Claude Code de tu ordenador. En un servidor necesitarías una clave de API de pago y adaptar un archivo."
+        },
+        {
+          "p": "¿Gasta de mi suscripción de Claude?",
+          "r": "Sí. Cada guion, idea o respuesta consume parte del límite de tu plan. Con Pro puedes llegar al límite en sesiones intensas."
+        },
+        {
+          "p": "¿Publica en redes directamente?",
+          "r": "No de serie. Necesitas una clave de Upload-Post (de pago) o tus propias apps aprobadas por Meta, Google y TikTok."
+        },
+        {
+          "p": "Mi nicho no es el fitness. ¿Me sirve?",
+          "r": "Sí, pero el contenido de partida es de fitness. La IA lo vacía o lo reescribe y no inventa referencias: la biblioteca empezará vacía hasta que añadas las tuyas."
+        }
+      ],
+      "readme": {
+        "h1": "Manny · Mánager de redes con IA que funciona en tu ordenador",
+        "tipo": "Mánager de redes con IA que funciona en tu ordenador",
+        "verificacion": "`npm ci`, `tsc`, `next build` y los 208 tests pasan; arranca con una base de datos vacía",
+        "lema": "Un estudio tipo Metricool más un mánager de contenido: subes un vídeo y te lo transcribe y te escribe el texto; pegas un TikTok que funciona y te da tres guiones para tu cuenta. Todo en tu PC, con tu suscripción de Claude.",
+        "intro": [
+          {
+            "t": "p",
+            "texto": "Pegas un prompt, contestas unas 15 preguntas (nombre de la app, nicho, redes, idioma) y tu IA instala las dependencias, personaliza la app y comprueba que transcribe. El resultado es idéntico a la demo, con tu marca y tu nicho."
+          }
+        ],
+        "secciones": [
+          {
+            "titulo": "Qué incluye",
+            "bloques": [
+              {
+                "t": "sub",
+                "texto": "Manny, el mánager (`/manny`)"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "**Hoy:** qué grabar y publicar hoy, la semana de un vistazo y un atajo para pegar un enlace",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Copiar:** pegas un TikTok o un Short. Lee sus cifras, oye lo que dice (Whisper local) y escribe **tres versiones** del guion para ti: gancho, qué dices, planos, edición, descripción y hashtags",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Ideas:** banco de ideas generadas con tu perfil, tus métricas y el radar, o guardadas desde una búsqueda en YouTube. Se convierten en guion con un clic",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Radar:** sigues cuentas de TikTok y canales de YouTube y marca los vídeos que **revientan para el tamaño de su cuenta** (≥2× su mediana y ≥5.000 visitas)",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Guiones** con estado (pendiente → grabado → publicado), **Biblioteca** (74 vídeos de referencia de fitness, recetas de edición en CapCut, normas y plan de directos), **chat con memoria** y **Mi perfil**",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "sub",
+                "texto": "Estudio de publicación"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Subida de vídeo → **transcripción local con faster-whisper** → título, descripción y 4 hashtags SEO escritos con IA",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Conversión a vertical 9:16, elección de portada, calendario, programación en lote y analítica",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Publicación en Instagram, Facebook, TikTok, YouTube y X a través de Upload-Post (opcional, de pago) o con tus propias apps de desarrollador",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Multiusuario con equipos, invitaciones, planes y Stripe (preparado, apagado por defecto)",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "texto": "**Técnico:** Next.js 16, React 19, Tailwind v4, SQLite integrado en Node (`node:sqlite`), cola de trabajos persistente, Python (faster-whisper, yt-dlp, PyAV) y Claude Code CLI. 208 tests."
+              }
+            ]
+          },
+          {
+            "titulo": "Avisos (léelos antes de comprar)",
+            "bloques": [
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "**Funciona en local.** Manny y la redacción con IA dependen de Claude Code con tu sesión iniciada en **ese** ordenador. En un servidor (VPS) el estudio funciona, pero Manny no, salvo que pongas `ANTHROPIC_API_KEY` y adaptes `src/lib/manny/llm.ts` a la API, que se paga por uso.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Gasta de tu suscripción de Claude.** Cada guion, idea o respuesta consume parte del límite de uso de tu plan. Con Pro puedes encontrarte el aviso «has llegado al límite» en sesiones intensas.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Límites de lectura de TikTok e Instagram.** Solo se lee lo público. TikTok no deja buscar por hashtag desde fuera e Instagram exige sesión, así que la búsqueda de ideas va por YouTube y el radar sigue perfiles de TikTok y canales de YouTube. Los carruseles de fotos no salen en el listado de un perfil. TikTok bloquea a ratos aunque se use `curl_cffi`: hay que esperar y reintentar. Manny lee texto y cifras; no ve las imágenes del vídeo.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Términos de uso de las plataformas.** El radar y «Copiar» leen páginas públicas con yt-dlp, sin API oficial. Eso puede ir contra los términos de servicio de TikTok y YouTube, y la responsabilidad del uso es tuya. Úsalo con moderación (la app ya hace las lecturas de una en una y con pausas), para analizar y no para republicar contenido ajeno, y respeta los derechos de autor.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Publicar en redes** no viene listo de serie: necesitas una clave de Upload-Post (de pago) o tus propias apps aprobadas por Meta, Google y TikTok, con HTTPS público y sus revisiones.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Contenido de partida de fitness.** Los guiones de ejemplo, las 74 referencias, las cuentas del radar y las reglas son de fitness y gimnasio. Si tu nicho es otro, la IA vacía o reescribe ese contenido, pero **no puede inventar referencias con cifras**: la Biblioteca empezará vacía hasta que añadas las tuyas.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "La interfaz está en español de España. Traducirla es posible, pero no forma parte de la instalación estándar.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "El cambio de nombre de la demo está a medias (parte de la interfaz dice «Manny» y parte «easypop»). La personalización lo deja todo con tu nombre.",
+                    "nivel": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "vistaPrevia": {
+        "lineas": [
+          "# PROMPT MAESTRO · Mánager de redes con IA en local («Manny»)",
+          "",
+          "> **Cómo se usa:** abre tu IA (Claude Code, Cursor, Windsurf, Codex… o un chat como claude.ai o ChatGPT), pega TODO este texto y envíalo. Ten a mano la carpeta `kit/` que venía con tu compra. La IA te irá preguntando lo que necesita.",
+          "",
+          "---",
+          "",
+          "## 0 · Quién eres y qué vas a hacer",
+          "",
+          "Eres un desarrollador senior especializado en Next.js, Node.js y Python, y vas a hacer de instalador de esta plantilla. Tu trabajo es entregar al usuario, idéntico al original, un proyecto ya terminado y probado **en su propio ordenador**:",
+          "",
+          "- **Estudio de vídeo** tipo Metricool: sube un vídeo, lo **transcribe en local con faster-whisper**, escribe con IA el título, la descripción y 4 hashtags SEO, lo pasa a vertical si hace falta y lo programa en el calendario. Opcionalmente lo publica en redes (Upload-Post o apps propias).",
+          "- **Manny, el mánager** (`/manny`): plan del día, «Copiar» (pegas un TikTok o un Short y escribe tres guiones adaptados), banco de ideas, radar de cuentas que revientan, guiones con estado, biblioteca de referencias, chat con memoria y perfil del creador. Piensa lanzando **`claude -p`**, la CLI de Claude Code con la suscripción del usuario, y lee TikTok y YouTube con **yt-dlp**.",
+          "",
+          "Stack fijo: Next.js 16 (App Router, TypeScript), React 19, Tailwind v4, SQLite con `node:sqlite` (base en `data/studio.db`, migraciones en `src/lib/db/migrations.ts`), Python (faster-whisper, PyAV, Pillow, yt-dlp, curl_cffi) y Claude Code CLI.",
+          "",
+          "El código original está en la carpeta `kit/`, que ya compila y pasa sus tests. **No reescribas el proyecto: instálalo y personalízalo.** El diseño, la estructura y la lógica no se tocan. Solo cambian la marca, el nicho, los textos y el contenido de partida, y los colores si el usuario lo pide.",
+          "",
+          "### Reglas que no te puedes saltar",
+          "",
+          "1. **Pregunta por bloques**, nunca más de 6 preguntas por mensaje. Cada pregunta lleva su valor por defecto entre corchetes; si el usuario responde «vale», «por defecto» o deja algo en blanco, usa ese valor.",
+          "2. **No inventes nada que parezca real**: vídeos de referencia, cifras de visitas o seguidores, cuentas de creadores, estudios ni métricas. Si cambia el nicho y no hay datos reales, el contenido de partida se vacía y se avisa. Nunca rellenes `REFERENCES` ni `STARTER_ACCOUNTS` con nombres o cifras que no hayas comprobado.",
+          "3. **Secretos:** `TOKEN_ENC_KEY` y cualquier clave (Upload-Post, Stripe, Meta, Google, TikTok, Resend) van solo a `.env.local`. Genera `TOKEN_ENC_KEY` con un comando que la escriba directamente en el archivo, sin enseñarla en el chat. Las claves del usuario las pega él en `.env.local`.",
+          "4. **No sigas sin confirmar**: después de la entrevista enseñas un resumen y esperas un «sí».",
+          "5. **Habla en el idioma del usuario.** La interfaz se queda en español de España salvo que pida otro idioma; en ese caso avisa de que la traducción es un trabajo aparte (más de 100 archivos con texto) y hazla solo si insiste.",
+          "6. **Antes de escribir código de Next.js**, lee `kit/AGENTS.md`: esta versión de Next.js tiene cambios que quizá no conozcas, como `proxy.ts` en lugar de `middleware.ts` y los tipos globales `PageProps`, `LayoutProps` y `RouteContext`."
+        ],
+        "total": 235
+      },
+      "paquete": {
+        "contenido": [
+          {
+            "ruta": "README.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 5436,
+            "lineas": 59
+          },
+          {
+            "ruta": "PROMPT.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 18555,
+            "lineas": 235
+          },
+          {
+            "ruta": "PERSONALIZAR.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 12123,
+            "lineas": 119
+          },
+          {
+            "ruta": "SPEC.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 13951,
+            "lineas": 125
+          },
+          {
+            "ruta": "kit/",
+            "tipo": "carpeta",
+            "archivos": 290,
+            "bytes": 3472285,
+            "lineas": 25761
+          }
+        ],
+        "archivos": 294,
+        "bytes": 3522350,
+        "lineasCodigo": 25761
+      }
+    },
+    {
+      "slug": "partyup",
+      "codigo": "PUP",
+      "titulo": "PartyUp · app social de fiestas",
+      "subtitulo": "App móvil de fiestas y previas para iOS y Android con salas compartidas, retos, tickets de oferta y 6 juegos.",
+      "categoria": "app móvil",
+      "stack": [
+        "Expo SDK 54",
+        "React Native 0.81",
+        "Reanimated 4",
+        "Skia",
+        "Supabase",
+        "RevenueCat",
+        "EAS"
+      ],
+      "precio": 99,
+      "precioBorrador": true,
+      "dificultad": "avanzada",
+      "tiempoInstalacion": "2-4 h con agente hasta tu móvil · 1-2 días hasta enviarla a revisión",
+      "requisitos": [
+        "Node.js 20+ y un móvil Android o iPhone",
+        "Cuentas de Expo, Supabase, Google Cloud y, si quieres cobrar, RevenueCat",
+        "Google Play (25 $) y Apple Developer (99 $/año) para publicar",
+        "Una política de privacidad publicada en una URL"
+      ],
+      "preguntas": 25,
+      "publicado": true,
+      "stripePaymentLink": "",
+      "captura": "",
+      "faq": [
+        {
+          "p": "¿Se puede probar en Expo Go?",
+          "r": "No. Usa módulos nativos (login con Apple y Google, compras), así que se prueba con un development build que se instala en el móvil. El prompt te guía."
+        },
+        {
+          "p": "¿Cuánto cuesta publicarla en las tiendas?",
+          "r": "Google Play cobra 25 $ una vez y Apple Developer 99 $ al año. Las cuentas personales nuevas de Google Play hacen antes una prueba cerrada con 12 testers durante 14 días."
+        },
+        {
+          "p": "¿Los vídeos y GIF se pueden publicar tal cual?",
+          "r": "No. Son de ejemplo y su licencia no está documentada: sustitúyelos por material propio o con licencia antes de publicar."
+        },
+        {
+          "p": "¿Trae panel de administración?",
+          "r": "No. La gestión se hace desde el panel de Supabase, y el alta de locales asociados con una consulta SQL que viene en el prompt."
+        }
+      ],
+      "readme": {
+        "h1": "PartyUp · App móvil de fiestas y previas (iOS + Android)",
+        "tipo": "App móvil de fiestas y previas (iOS + Android)",
+        "verificacion": "`tsc` sin errores, `expo-doctor` sin errores de dependencias y `expo export` para Android e iOS correcto",
+        "lema": "Una app social para que tus amigos conviertan cada previa en una sala compartida, con contador de bebidas, fotos, retos, tickets de oferta y 6 juegos de fiesta. Tu propia IA la instala con tu marca.",
+        "intro": [
+          {
+            "t": "p",
+            "texto": "Pegas un prompt, contestas unas 25 preguntas (nombre, icono, color, identificadores y cuentas) y la IA instala, personaliza, monta el backend en Supabase y prepara los builds para las tiendas. Tienes la app de la demo con tu nombre y tu icono, lista para publicar en Google Play y en el App Store."
+          }
+        ],
+        "secciones": [
+          {
+            "titulo": "Qué incluye",
+            "bloques": [
+              {
+                "t": "sub",
+                "texto": "Fiestas"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Crear una fiesta con un código de 6 letras o unirse a una. Fiestas de 5 personas, o de 15 con Pro.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Contador de bebidas compartido en tiempo real, con partículas y háptica.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Una foto y una nota por persona, con visor a pantalla completa y reacciones con stickers animados.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Retos con cuenta atrás de 15 min (foto, nota o «hecho»), con revelado deslizando y pantalla de resultados.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Tickets de oferta (2x1, 3x2…) que se rompen deslizando, con confeti.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Archivo de fiestas pasadas en rejilla o calendario, con «Un día como hoy, hace un año».",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "sub",
+                "texto": "Juegos (sin conexión)"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Impostor, Verdad o reto, La Oca (tablero en espiral con dado animado), Prefieres, Yo nunca y Quién es más probable.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Cartas que se descartan deslizando, categorías chill, party y hot, y jugadores guardados.",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "sub",
+                "texto": "Locales"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Pestaña «Clubs» con bares y discotecas cercanos: incluye los 18.112 locales de España de OpenStreetMap y un script para importarlos.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Panel para discotecas asociadas: estadísticas y envío de retos y ofertas a las fiestas activas en el local.",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "sub",
+                "texto": "Cuenta y negocio"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Login con Apple y Google, nombre de usuario y avatar.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Estadísticas en el perfil y borrado de cuenta con anonimización.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Suscripción Pro con RevenueCat (paywall, restaurar compras y webhook que sincroniza el estado Pro).",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Avisos push cuando alguien se une, cuando hay un reto nuevo o terminado y cuando llega una oferta.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Interfaz en 5 idiomas: español, inglés, francés, alemán e italiano.",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "texto": "**Técnico:** Expo SDK 54, React Native 0.81, expo-router 6, Reanimated 4, Skia y Supabase (Postgres con RLS, Realtime, Storage, Edge Functions, pg_cron y PostGIS). Builds con EAS. Unas 47.000 líneas de TypeScript."
+              }
+            ]
+          },
+          {
+            "titulo": "Avisos (léelos antes de comprar)",
+            "bloques": [
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "**No funciona en Expo Go ni en web.** Usa módulos nativos (login con Apple y Google, compras), así que se prueba con un *development build* que se instala en el móvil. El prompt te guía.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**El contenido de los juegos está en inglés** (unas 300 frases). La interfaz sí está traducida. La IA te lo traduce si se lo pides. También vienen unas 1.100 frases de «Yo nunca» en 8 idiomas en CSV, sin conectar todavía.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Los vídeos y los GIF son de ejemplo.** Proceden de GIPHY o de stock y su licencia no está documentada. Sustitúyelos por material propio o con licencia antes de publicar. Por derechos, del kit se han **retirado** los GIF de series de TV (Padre de familia, The Office, Broad City, Bob Esponja y los Minions) y las fotos de personas reales del onboarding, que se han cambiado por fondos neutros.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Es una app centrada en el alcohol:** las tiendas te pedirán clasificación 18+ y la revisión de Apple puede ser más exigente.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**No incluye web ni panel de administración.** La gestión se hace desde el panel de Supabase, y el alta de locales asociados con una consulta SQL que viene en el prompt.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Detalles conocidos del original, documentados en `SPEC.md` §8:",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "el contador de bebidas suma siempre «cerveza»;",
+                    "nivel": 1
+                  },
+                  {
+                    "texto": "el tablero Pro de la Oca no está bloqueado;",
+                    "nivel": 1
+                  },
+                  {
+                    "texto": "los enlaces legales están por conectar (el prompt lo hace).",
+                    "nivel": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "vistaPrevia": {
+        "lineas": [
+          "# PROMPT MAESTRO · App de fiestas y previas para iOS y Android («PartyUp»)",
+          "",
+          "> **Cómo se usa:** abre tu IA (Claude Code, Cursor, Windsurf, Codex… o un chat como claude.ai o ChatGPT), pega TODO este texto y envíalo. Ten a mano la carpeta `kit/` que venía con tu compra. La IA te irá preguntando lo que necesita.",
+          "",
+          "---",
+          "",
+          "## 0 · Quién eres y qué vas a hacer",
+          "",
+          "Eres un desarrollador senior especializado en React Native, Expo y Supabase, y vas a hacer de instalador de esta plantilla. Tu trabajo es entregar al usuario su propia app móvil, idéntica al original, ya terminada y probada:",
+          "",
+          "- **App social de fiestas** para iOS y Android:",
+          "  - crear una fiesta con código o unirse a una;",
+          "  - contador de bebidas compartido en tiempo real;",
+          "  - una foto y una nota por persona, con reacciones de stickers;",
+          "  - retos con cuenta atrás;",
+          "  - tickets de oferta que se rompen deslizando;",
+          "  - archivo de fiestas con calendario;",
+          "  - buscador de discotecas cercanas;",
+          "  - perfil con estadísticas.",
+          "- **6 juegos de fiesta**: Impostor, Verdad o reto, La Oca, Prefieres, Yo nunca y Quién es más probable.",
+          "- **Panel para locales**: estadísticas y envío de retos y ofertas a las fiestas activas en el local.",
+          "- **Suscripción Pro** con RevenueCat, avisos push y login con Apple y Google.",
+          "",
+          "Stack fijo: Expo SDK 54 (React Native 0.81, New Architecture), expo-router 6, TypeScript, Reanimated 4, Skia, Supabase (Postgres + Auth + Storage + Realtime + Edge Functions + pg_cron + PostGIS), RevenueCat y EAS Build.",
+          ""
+        ],
+        "total": 237
+      },
+      "paquete": {
+        "contenido": [
+          {
+            "ruta": "README.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 5325,
+            "lineas": 77
+          },
+          {
+            "ruta": "PROMPT.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 18982,
+            "lineas": 237
+          },
+          {
+            "ruta": "PERSONALIZAR.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 12154,
+            "lineas": 142
+          },
+          {
+            "ruta": "SPEC.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 19318,
+            "lineas": 273
+          },
+          {
+            "ruta": "kit/",
+            "tipo": "carpeta",
+            "archivos": 316,
+            "bytes": 99135313,
+            "lineas": 62451
+          }
+        ],
+        "archivos": 320,
+        "bytes": 99191092,
+        "lineasCodigo": 62451
+      }
+    },
+    {
+      "slug": "tubegen",
+      "codigo": "TBG",
+      "titulo": "TubeGen",
+      "subtitulo": "Fábrica de episodios para YouTube: guion con fuentes, voz, vídeo largo, Short y miniatura renderizados con Remotion.",
+      "categoria": "vídeo",
+      "stack": [
+        "Node.js 22",
+        "Remotion 4",
+        "React 19",
+        "TypeScript",
+        "Python + edge-tts",
+        "ffmpeg",
+        "API de YouTube"
+      ],
+      "precio": 59,
+      "precioBorrador": true,
+      "dificultad": "avanzada",
+      "tiempoInstalacion": "30-60 min con agente, más el primer render · 2-3 h en chat",
+      "requisitos": [
+        "Una IA: agente (Claude Code, Cursor, Windsurf, Codex) o chat (claude.ai, ChatGPT)",
+        "Node.js 22+, Python 3.10+, ffmpeg y unos 2 GB libres",
+        "Claude Code con tu suscripción o una clave de API de Anthropic para los guiones",
+        "Opcional: claves gratis de Pexels y YouTube; ElevenLabs si quieres mejor voz"
+      ],
+      "preguntas": 25,
+      "publicado": true,
+      "stripePaymentLink": "",
+      "captura": "",
+      "faq": [
+        {
+          "p": "¿Publica los vídeos solo?",
+          "r": "No. Sube en privado o programado y nunca publica sin tu revisión. Cada episodio genera un REVISAR.md con una checklist."
+        },
+        {
+          "p": "¿Cuánto cuesta usarlo cada mes?",
+          "r": "Con Claude Code y voz gratuita, 0 € extra. Con la API de Claude y dos episodios por semana, unos 2-3 $ al mes (precios de septiembre de 2026; compruébalos)."
+        },
+        {
+          "p": "¿Puedo probarlo sin claves?",
+          "r": "Sí. El kit trae un Short de ejemplo ya producido que se renderiza en un par de minutos."
+        },
+        {
+          "p": "¿YouTube monetiza este contenido?",
+          "r": "Depende de cómo lo uses. YouTube retira la monetización al contenido producido en masa. El sistema exige datos con fuente y rota formatos, pero revisar cada guion es tu trabajo."
+        }
+      ],
+      "readme": {
+        "h1": "TubeGen · Fábrica de vídeos para tu canal de YouTube",
+        "tipo": "Fábrica de vídeos para tu canal de YouTube",
+        "verificacion": "`tsc` pasa, Remotion lista las 3 composiciones y el Short de ejemplo se renderiza",
+        "lema": "Un sistema que convierte un tema en un episodio listo para revisar: guion con fuentes, voz, vídeo largo, Short y miniatura, montados con Remotion. Tu IA lo instala con tu nicho, tu idioma, tu voz y tus colores.",
+        "intro": [
+          {
+            "t": "p",
+            "texto": "Pegas un prompt, contestas unas 25 preguntas (nombre del canal, temática, público, formatos, idioma, voz, estilo y qué servicios quieres usar) y la IA instala, personaliza y hace un render de prueba. El resultado es idéntico a la demo («Curiosidad Máxima», curiosidades con datos), pero con tu canal."
+          }
+        ],
+        "secciones": [
+          {
+            "titulo": "Qué incluye",
+            "bloques": [
+              {
+                "t": "p",
+                "texto": "**Por cada episodio** (`npm run make -- --topic \"…\"`)"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Guion escrito por Claude con gancho, bucle abierto, capítulos, cierre con pregunta y una lista de **fuentes con URL**",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "10 títulos alternativos, descripción con capítulos automáticos, tags, texto de miniatura y subtítulos SRT",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Voz por frase con tiempos por palabra: edge-tts (gratis) o ElevenLabs",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Fotos y vídeos de stock de Pexels elegidos por escena (opcional) y música de tu carpeta",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Vídeo largo** 1920×1080 con 8 tipos de escena animados (gancho, dato, cifra que cuenta, lista, comparación, cita, b-roll y cierre), barra de progreso y 20 s de pantalla final",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Short** 1080×1920 independiente, con subtítulos grandes que resaltan la palabra que suena",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Miniatura** 1280×720",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "`REVISAR.md` con todo lo anterior y una checklist para revisar antes de publicar",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "sub",
+                "texto": "Para el canal"
+              },
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "Subida a YouTube por API: largo + Short enlazado, miniatura, subtítulos y publicación programada a tu hora",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Detector de vídeos «outlier» de tu nicho (los que rinden 5 veces la media de su canal) para elegir temas",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Generador de ideas que rota tus formatos y evita repetir",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Bucle de estadísticas: lee YouTube Analytics y da prioridad a los formatos que mejor te funcionan",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Tarea diaria opcional (Windows o cron)",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "4 informes de investigación (monetización, canales de referencia, audiencia y stack técnico, a septiembre de 2026)",
+                    "nivel": 0
+                  }
+                ]
+              },
+              {
+                "t": "p",
+                "texto": "**Técnico:** Node.js 22+, Remotion 4, React 19, TypeScript, Python con edge-tts, ffmpeg, SDK de Anthropic y API de YouTube. Funciona en local, en Windows, macOS o Linux."
+              }
+            ]
+          },
+          {
+            "titulo": "Cuánto cuesta usarlo",
+            "bloques": [
+              {
+                "t": "p",
+                "texto": "Precios de septiembre de 2026; compruébalos antes de empezar."
+              },
+              {
+                "t": "tabla",
+                "cabecera": [
+                  "Configuración",
+                  "Coste aproximado"
+                ],
+                "filas": [
+                  [
+                    "Claude Code (tu suscripción) + edge-tts + Pexels",
+                    "**0 € extra al mes**"
+                  ],
+                  [
+                    "API de Claude (`claude-sonnet-5-5`) + edge-tts, 2 episodios por semana",
+                    "**~2-3 $/mes** (0,15-0,35 $ por guion)"
+                  ],
+                  [
+                    "Lo anterior + ElevenLabs (plan Creator)",
+                    "**~25 $/mes**"
+                  ]
+                ]
+              },
+              {
+                "t": "p",
+                "texto": "La API de YouTube, Pexels y Remotion son gratis (Remotion, para particulares y empresas de hasta 3 personas)."
+              }
+            ]
+          },
+          {
+            "titulo": "Avisos importantes",
+            "bloques": [
+              {
+                "t": "lista",
+                "items": [
+                  {
+                    "texto": "**No es un botón de «dinero automático».** YouTube retira la monetización a los canales de contenido «no auténtico» o «producido en masa» (plantillas repetidas con poca variación) y en enero de 2026 cerró canales enormes de IA, varios en español. Este sistema está pensado para ayudarte a producir, no para sustituir tu criterio: **no publica nada sin tu revisión**, exige datos con fuente, rota formatos y sube a ritmo humano. Revisar los datos de cada guion es tu trabajo.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Declara la IA.** Cada descripción incluye una línea que dice que el guion se ha escrito con ayuda de IA y que la voz es sintética. Si usas imágenes realistas generadas o voces clonadas de personas reales, marca «contenido alterado o sintético».",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Subida en privado.** Los proyectos de Google Cloud sin auditar suben siempre en privado. Hasta que pidas la auditoría de la API de YouTube, publica desde YouTube Studio. Poner miniaturas por API exige tener el canal verificado por teléfono.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**Las voces y servicios no oficiales pueden cambiar.** edge-tts es gratis pero no oficial: si deja de funcionar, cambia a ElevenLabs en una línea.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "**No reutiliza contenido ajeno.** Solo usa stock con licencia (Pexels) y la música que tú pongas. No descarga ni resube vídeos de otros.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "El guion de ejemplo y su vídeo son **de demo**: no los publiques.",
+                    "nivel": 0
+                  },
+                  {
+                    "texto": "Los 10 bugs detectados en el original están corregidos y documentados en `SPEC.md` §8.",
+                    "nivel": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "vistaPrevia": {
+        "lineas": [
+          "# PROMPT MAESTRO · Fábrica de vídeos para un canal de YouTube («TubeGen»)",
+          "",
+          "> **Cómo se usa:** abre tu IA (Claude Code, Cursor, Windsurf, Codex… o un chat como claude.ai o ChatGPT), pega TODO este texto y envíalo. Ten a mano la carpeta `kit/` que venía con tu compra. La IA te irá preguntando lo que necesita.",
+          "",
+          "---",
+          "",
+          "## 0 · Quién eres y qué vas a hacer",
+          "",
+          "Eres un desarrollador senior especializado en Node.js, Remotion y las APIs de YouTube, y vas a hacer de instalador de esta plantilla. Tu trabajo es entregar al usuario, idéntico al original, un sistema ya terminado y probado que fabrica episodios para **su** canal de YouTube:",
+          "",
+          "- **Guion con fuentes** escrito por Claude (por API o con su Claude Code), con gancho, capítulos y 10 títulos alternativos.",
+          "- **Voz** con tiempos por palabra: edge-tts (gratis) o ElevenLabs.",
+          "- **Material de stock** de Pexels (opcional) y música propia.",
+          "- **Render con Remotion**: vídeo largo 16:9 con capítulos y pantalla final, **Short** 9:16 con subtítulos palabra a palabra y **miniatura** 1280×720.",
+          "- **`REVISAR.md`** con títulos, descripción, tags, fuentes y checklist para revisar antes de publicar.",
+          "- **Subida a YouTube** (privado o programado), detector de vídeos «outlier» del nicho, bucle de estadísticas que prioriza los formatos que funcionan y tarea diaria opcional.",
+          "",
+          "Stack fijo: Node.js ≥ 22, Remotion 4.0.529, React 19, TypeScript, `@anthropic-ai/sdk`, `googleapis`, Python 3.10+ con `edge-tts` y ffmpeg/ffprobe.",
+          "",
+          "El código original está en la carpeta `kit/`, que ya compila y renderiza. **No reescribas el proyecto: instálalo y personalízalo.** El pipeline, las plantillas y las animaciones no se tocan. Solo cambian el perfil del canal, los textos visibles, el idioma de los prompts y, si el usuario lo pide, colores y tipografías.",
+          "",
+          "### Reglas que no te puedes saltar",
+          "",
+          "1. **Pregunta por bloques**, nunca más de 6 preguntas por mensaje. Cada pregunta lleva su valor por defecto entre corchetes; si el usuario responde «vale», «por defecto» o deja algo en blanco, usa ese valor.",
+          "2. **No inventes nada que parezca real**: ni cifras de suscriptores, ni testimonios, ni datos en los guiones de ejemplo. El sistema exige datos con fuente; no lo debilites."
+        ],
+        "total": 204
+      },
+      "paquete": {
+        "contenido": [
+          {
+            "ruta": "README.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 5457,
+            "lineas": 75
+          },
+          {
+            "ruta": "PROMPT.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 18761,
+            "lineas": 204
+          },
+          {
+            "ruta": "PERSONALIZAR.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 11405,
+            "lineas": 133
+          },
+          {
+            "ruta": "SPEC.md",
+            "tipo": "archivo",
+            "archivos": 1,
+            "bytes": 20379,
+            "lineas": 170
+          },
+          {
+            "ruta": "kit/",
+            "tipo": "carpeta",
+            "archivos": 66,
+            "bytes": 738036,
+            "lineas": 4131
+          }
+        ],
+        "archivos": 70,
+        "bytes": 794038,
+        "lineasCodigo": 4131
+      }
+    }
+  ]
+}

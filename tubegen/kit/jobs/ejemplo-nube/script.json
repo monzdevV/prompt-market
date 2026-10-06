@@ -1,0 +1,889 @@
+{
+  "topic": "¿Cuánto pesa una nube?",
+  "pillar": "pregunta",
+  "titleOptions": [
+    "Una nube pesa 500 toneladas. ¿Por qué no se cae?",
+    "¿Cuánto pesa una nube? La respuesta son 100 elefantes",
+    "El peso real de una nube (y por qué flota)",
+    "¿Cuánto pesa una nube? Hicimos la cuenta",
+    "500 toneladas flotando sobre tu cabeza",
+    "Por qué una nube de 500 toneladas no se cae",
+    "Una nube pesa como 100 elefantes: así se calcula",
+    "¿Cuánto pesa una nube de tormenta?",
+    "Lo que pesa el cielo: nubes, vapor y lluvia",
+    "La física que sostiene 500 toneladas de agua"
+  ],
+  "title": "Una nube pesa 500 toneladas. ¿Por qué no se cae?",
+  "thumbnail": {
+    "text": "100 elefantes flotando",
+    "emphasis": "100 elefantes",
+    "kicker": "Física real"
+  },
+  "description": "¿Cuánto pesa una nube? Un cúmulo pequeño, de los de buen tiempo, guarda unas 500 toneladas de agua líquida: más o menos lo que pesan 100 elefantes. Hacemos la cuenta paso a paso con datos del USGS y del NCAR y explicamos por qué ese peso no se nos cae encima. Hablamos de gotitas de diez micras, de la ley de Stokes, de corrientes ascendentes y de por qué hace falta un millón de gotitas para formar una sola gota de lluvia.\n\nDespués subimos de escala: las nubes de tormenta, el granizo que se queda suspendido en el aire y el peso de toda el agua de la atmósfera, casi 13 billones de toneladas que se renuevan cada nueve días. Ciencia del clima, meteorología y física explicadas con cifras verificables y comparaciones que puedes imaginarte.",
+  "tags": [
+    "cuánto pesa una nube",
+    "peso de una nube",
+    "nubes",
+    "meteorología",
+    "ciencia",
+    "física",
+    "ciclo del agua",
+    "por qué flotan las nubes",
+    "cumulonimbo",
+    "lluvia",
+    "atmósfera",
+    "curiosidades",
+    "datos curiosos",
+    "Curiosidad Máxima"
+  ],
+  "sources": [
+    {
+      "claim": "Un cúmulo típico de un kilómetro cúbico contiene unos 0,5 g de agua por metro cúbico, unas 500 toneladas en total",
+      "source": "USGS Water Science School: How much does a cloud weigh?",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh"
+    },
+    {
+      "claim": "La comparación de un cúmulo con unos 100 elefantes, calculada por la meteoróloga Peggy LeMone (NCAR)",
+      "source": "USGS Water Science School (cita el cálculo de Peggy LeMone, NCAR)",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh"
+    },
+    {
+      "claim": "Densidad del aire a 1-2 km de altitud, alrededor de 1 kg por metro cúbico",
+      "source": "Atmósfera Estándar Internacional",
+      "url": "https://en.wikipedia.org/wiki/International_Standard_Atmosphere"
+    },
+    {
+      "claim": "Gotitas de nube de unas 10 micras de radio, concentraciones de 100 a 1000 por cm³, y alrededor de un millón de gotitas por gota de lluvia",
+      "source": "Física de nubes (Cloud physics)",
+      "url": "https://en.wikipedia.org/wiki/Cloud_physics"
+    },
+    {
+      "claim": "Las nubes se forman cuando el vapor se condensa sobre núcleos de condensación (polvo, sal, polen)",
+      "source": "UCAR Center for Science Education: How clouds form",
+      "url": "https://scied.ucar.edu/learning-zone/clouds/how-clouds-form"
+    },
+    {
+      "claim": "En el régimen de Stokes, la velocidad de caída es proporcional al cuadrado del radio; una gotita de 10 micras cae a algo más de 1 cm/s",
+      "source": "Ley de Stokes",
+      "url": "https://en.wikipedia.org/wiki/Stokes%27_law"
+    },
+    {
+      "claim": "Una gota de lluvia de 2 mm de diámetro cae a unos 6,5 m/s",
+      "source": "Gunn y Kinzer (1949), Journal of Meteorology",
+      "url": "https://doi.org/10.1175/1520-0469(1949)006%3C0243:TTVOFF%3E2.0.CO;2"
+    },
+    {
+      "claim": "En las tormentas más fuertes, las corrientes ascendentes que sostienen el granizo superan los 100 km/h",
+      "source": "NOAA National Severe Storms Laboratory: Hail basics",
+      "url": "https://www.nssl.noaa.gov/education/svrwx101/hail/"
+    },
+    {
+      "claim": "Las nubes cubren alrededor del 67 % de la superficie terrestre",
+      "source": "NASA Earth Observatory: Cloudy Earth",
+      "url": "https://earthobservatory.nasa.gov/images/85843/cloudy-earth"
+    },
+    {
+      "claim": "La atmósfera contiene unos 12.900 km³ de agua, el 0,001 % del agua de la Tierra; si cayera toda a la vez, cubriría el planeta con unos 2,5 cm",
+      "source": "USGS Water Science School: Water in the atmosphere",
+      "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-atmosphere"
+    },
+    {
+      "claim": "La precipitación global es de unos 505.000 km³ al año; el tiempo medio de residencia es de unos 9 días en la atmósfera y de unos 3.200 años en el océano",
+      "source": "Ciclo del agua (tablas de flujos y tiempos de residencia)",
+      "url": "https://en.wikipedia.org/wiki/Water_cycle"
+    },
+    {
+      "claim": "Las lluvias de más de 30 mm/h se consideran de intensidad muy fuerte",
+      "source": "AEMET: Plan Meteoalerta",
+      "url": "https://www.aemet.es/es/eltiempo/prediccion/avisos/ayuda"
+    }
+  ],
+  "long": {
+    "sections": [
+      {
+        "heading": "Quinientas toneladas en el cielo",
+        "scenes": [
+          {
+            "text": "Una nube pequeña, de esas de algodón, pesa unas quinientas toneladas. Más o menos lo mismo que cien elefantes flotando sobre tu cabeza.",
+            "visual": {
+              "kind": "hook",
+              "headline": "500 toneladas sobre tu cabeza",
+              "emphasis": "500 toneladas",
+              "label": "Un cúmulo pequeño"
+            },
+            "mediaQuery": "cumulus cloud blue sky"
+          },
+          {
+            "text": "No es una exageración. Es la cuenta que hacen los meteorólogos con un cúmulo típico, que ocupa más o menos un kilómetro cúbico.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Un cúmulo típico",
+              "emphasis": "típico",
+              "label": "Volumen aproximado",
+              "value": 1,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " km³"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Y aun así no se cae. Se queda ahí arriba, quieta, durante minutos u horas, como si no pesara absolutamente nada.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Y no se cae",
+              "emphasis": "no se cae"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Pero lo más raro no es lo que pesa la nube. Lo más raro es lo que pesa todo lo que la rodea.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Lo raro está alrededor",
+              "emphasis": "alrededor"
+            },
+            "mediaQuery": "cumulus clouds timelapse"
+          },
+          {
+            "text": "Así que hay dos preguntas. De dónde sale ese peso tan enorme, y por qué no se nos cae encima.",
+            "visual": {
+              "kind": "list",
+              "headline": "Dos preguntas",
+              "emphasis": "Dos",
+              "items": [
+                "De dónde sale ese peso",
+                "Por qué no se nos cae"
+              ]
+            },
+            "mediaQuery": null
+          }
+        ]
+      },
+      {
+        "heading": "La cuenta del cúmulo",
+        "scenes": [
+          {
+            "text": "Primero, lo que ves no es vapor. El vapor de agua es invisible. Una nube está hecha de gotitas de agua líquida.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Una nube no es vapor",
+              "emphasis": "no es vapor"
+            },
+            "mediaQuery": "water droplets macro"
+          },
+          {
+            "text": "Se forman cuando el aire sube y se enfría. El vapor se condensa sobre partículas diminutas de polvo, sal marina o polen.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Agua sobre una mota de polvo",
+              "emphasis": "polvo"
+            },
+            "mediaQuery": "dust particles sunlight"
+          },
+          {
+            "text": "Y son muchísimas. En cada centímetro cúbico de nube flotan entre cien y mil gotitas, todas invisibles a simple vista.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Gotitas por centímetro cúbico",
+              "emphasis": "Gotitas",
+              "label": "Por cm³",
+              "value": 1000,
+              "decimals": 0,
+              "prefix": "hasta ",
+              "suffix": ""
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Son tantas y tan pequeñas que dispersan todos los colores de la luz del sol por igual. Por eso la nube se ve blanca.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Por qué se ve blanca",
+              "emphasis": "blanca"
+            },
+            "mediaQuery": "white clouds sunlight"
+          },
+          {
+            "text": "Ahora, el dato clave. En un cúmulo hay, de media, medio gramo de agua líquida en cada metro cúbico de nube.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Agua en cada metro cúbico",
+              "emphasis": "metro cúbico",
+              "label": "Por metro cúbico",
+              "value": 0.5,
+              "decimals": 1,
+              "prefix": "",
+              "suffix": " g"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Medio gramo es casi nada, unas diez gotas de cuentagotas. Pero un kilómetro cúbico contiene mil millones de metros cúbicos.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Mil millones de metros cúbicos",
+              "emphasis": "Mil millones",
+              "label": "1 km³"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Multiplica: medio gramo por mil millones son quinientos millones de gramos. Es decir, quinientas toneladas de agua suspendida.",
+            "visual": {
+              "kind": "compare",
+              "headline": "De medio gramo a 500 toneladas",
+              "emphasis": "500 toneladas",
+              "left": {
+                "label": "1 metro cúbico",
+                "value": "0,5 g"
+              },
+              "right": {
+                "label": "1 kilómetro cúbico",
+                "value": "500 t"
+              }
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Un elefante africano pesa unas cinco toneladas. Así que esa nube de aspecto inofensivo equivale a unos cien elefantes.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Una manada en el cielo",
+              "emphasis": "manada",
+              "value": 100,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " elefantes"
+            },
+            "mediaQuery": "african elephant herd"
+          },
+          {
+            "text": "La comparación la popularizó la meteoróloga Peggy LeMone, del Centro Nacional de Investigación Atmosférica de Estados Unidos.",
+            "visual": {
+              "kind": "quote",
+              "headline": "La cuenta de los elefantes",
+              "emphasis": "elefantes",
+              "label": "NCAR",
+              "sub": "Peggy LeMone, meteoróloga"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Y ojo, porque eso es un cúmulo modesto, de buen tiempo. Las nubes de tormenta juegan en otra liga, y llegaremos a ellas.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Y esa es la pequeña",
+              "emphasis": "pequeña"
+            },
+            "mediaQuery": null
+          }
+        ]
+      },
+      {
+        "heading": "El aire pesa más que la nube",
+        "scenes": [
+          {
+            "text": "Ahora viene el giro. Esas quinientas toneladas no flotan en el vacío. Están mezcladas con el aire, y el aire también pesa.",
+            "visual": {
+              "kind": "fact",
+              "headline": "El aire también pesa",
+              "emphasis": "también pesa"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "A la altura de un cúmulo, entre uno y dos kilómetros, un metro cúbico de aire pesa alrededor de un kilo.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Lo que pesa el aire",
+              "emphasis": "aire",
+              "label": "Por metro cúbico de aire",
+              "value": 1,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " kg"
+            },
+            "mediaQuery": "sky above clouds"
+          },
+          {
+            "text": "Así que el aire de ese mismo kilómetro cúbico pesa cerca de un millón de toneladas. El agua de la nube, solo quinientas.",
+            "visual": {
+              "kind": "compare",
+              "headline": "Aire contra agua",
+              "emphasis": "Aire",
+              "left": {
+                "label": "Aire",
+                "value": "1.000.000 t"
+              },
+              "right": {
+                "label": "Agua de la nube",
+                "value": "500 t"
+              }
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Dicho de otra forma: el agua es apenas el cero coma cero cinco por ciento de la masa de la nube. Todo lo demás es aire.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Casi todo es aire",
+              "emphasis": "aire",
+              "sub": "El agua: solo un 0,05 %"
+            },
+            "mediaQuery": "clouds aerial view"
+          },
+          {
+            "text": "La nube pesa, sí, pero está sumergida en algo que pesa dos mil veces más. Como una cucharadita de sal disuelta en un cubo de diez litros.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Una pizca dentro del aire",
+              "emphasis": "pizca",
+              "sub": "El aire pesa unas 2000 veces más"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Por eso la pregunta interesante no es cuánto pesa una nube. Es por qué ese medio gramo por metro cúbico no termina en el suelo.",
+            "visual": {
+              "kind": "quote",
+              "headline": "La pregunta de verdad",
+              "emphasis": "de verdad"
+            },
+            "mediaQuery": null
+          }
+        ]
+      },
+      {
+        "heading": "Por qué no se cae",
+        "scenes": [
+          {
+            "text": "Respuesta corta: sí se cae. Cada gotita de la nube está cayendo todo el rato. Lo que pasa es que cae muy, muy despacio.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Sí se cae",
+              "emphasis": "Sí"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Una gotita típica de nube tiene unas diez micras de radio. Es unas cien veces más pequeña que una gota de lluvia.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Diminuta de verdad",
+              "emphasis": "Diminuta",
+              "label": "Radio de una gotita",
+              "value": 10,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " µm"
+            },
+            "mediaQuery": "water droplet microscope"
+          },
+          {
+            "text": "A ese tamaño, lo que manda es el rozamiento con el aire. Cuanto más pequeña es una gota, más la frena en proporción a su peso.",
+            "visual": {
+              "kind": "fact",
+              "headline": "El aire hace de freno",
+              "emphasis": "freno",
+              "label": "Ley de Stokes"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "La física es clara: si reduces el tamaño de una gota diez veces, cae unas cien veces más despacio.",
+            "visual": {
+              "kind": "fact",
+              "headline": "10 veces menor, 100 más lenta",
+              "emphasis": "100"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Una gotita de nube cae a poco más de un centímetro por segundo. En aire quieto, tardaría casi un día en bajar un kilómetro.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Caída a cámara lenta",
+              "emphasis": "cámara lenta",
+              "label": "Velocidad de caída",
+              "value": 1,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " cm/s"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Es lo mismo que le pasa al polvo que ves flotar en un rayo de sol. Pesa, pero el aire lo sostiene casi sin esfuerzo.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Como el polvo en la luz",
+              "emphasis": "polvo"
+            },
+            "mediaQuery": "dust floating sunbeam"
+          },
+          {
+            "text": "Y el aire de un cúmulo nunca está quieto. Sube a varios metros por segundo, mientras la gotita baja a un centímetro por segundo.",
+            "visual": {
+              "kind": "compare",
+              "headline": "Una carrera desigual",
+              "emphasis": "desigual",
+              "left": {
+                "label": "La gotita cae",
+                "value": "1 cm/s"
+              },
+              "right": {
+                "label": "El aire sube",
+                "value": "varios m/s"
+              }
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "La corriente gana de calle. Y en los bordes, donde el aire baja y se mezcla con aire seco, las gotitas simplemente se evaporan.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Los bordes se deshacen",
+              "emphasis": "deshacen"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Una nube no es un objeto quieto. Es un proceso: agua que se condensa por un lado y se evapora por el otro.",
+            "visual": {
+              "kind": "quote",
+              "headline": "Una nube es un proceso",
+              "emphasis": "proceso"
+            },
+            "mediaQuery": "cloud forming timelapse"
+          }
+        ]
+      },
+      {
+        "heading": "De gotita a gota de lluvia",
+        "scenes": [
+          {
+            "text": "Entonces, ¿cuándo cae el agua de verdad? Cuando las gotitas dejan de ser gotitas y se convierten en otra cosa.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Cuándo llueve de verdad",
+              "emphasis": "llueve"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Para formar una sola gota de lluvia hace falta reunir alrededor de un millón de gotitas de nube.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Un millón para una gota",
+              "emphasis": "Un millón",
+              "label": "Gotitas por gota de lluvia",
+              "value": 1000000,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": ""
+            },
+            "mediaQuery": "raindrop close up"
+          },
+          {
+            "text": "Tiene lógica. Si el radio crece cien veces, el volumen crece cien por cien por cien. Justo un millón.",
+            "visual": {
+              "kind": "fact",
+              "headline": "100 × 100 × 100",
+              "emphasis": "100"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Las gotitas crecen de dos formas. Choques entre gotitas que se van fusionando, y cristales de hielo que roban vapor en la parte fría de la nube.",
+            "visual": {
+              "kind": "list",
+              "headline": "Dos formas de crecer",
+              "emphasis": "crecer",
+              "items": [
+                "Choques entre gotitas",
+                "Cristales de hielo"
+              ]
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Ese crecimiento no es instantáneo. Pueden pasar decenas de minutos desde que nace la nube hasta que cae la primera gota.",
+            "visual": {
+              "kind": "fact",
+              "headline": "La lluvia se hace esperar",
+              "emphasis": "esperar"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Una gota de lluvia de dos milímetros ya cae a unos seis metros y medio por segundo. Casi ninguna corriente normal puede sostenerla.",
+            "visual": {
+              "kind": "broll",
+              "headline": "La lluvia ya no flota",
+              "emphasis": "no flota",
+              "sub": "Gota de 2 mm: unos 6,5 m/s"
+            },
+            "mediaQuery": "rain drops slow motion"
+          },
+          {
+            "text": "Por eso no todas las nubes llueven. Muchos cúmulos nacen, crecen unos minutos y se deshacen sin soltar ni una gota.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Nubes que nunca llueven",
+              "emphasis": "nunca"
+            },
+            "mediaQuery": null
+          }
+        ]
+      },
+      {
+        "heading": "Dentro de una tormenta",
+        "scenes": [
+          {
+            "text": "Ahora subamos de escala. Un cumulonimbo, la nube de tormenta, puede superar los diez kilómetros de altura.",
+            "visual": {
+              "kind": "broll",
+              "headline": "El gigante de las tormentas",
+              "emphasis": "gigante",
+              "label": "Cumulonimbo"
+            },
+            "mediaQuery": "cumulonimbus storm cloud"
+          },
+          {
+            "text": "Además, lleva más agua por metro cúbico. En su interior puede haber uno o varios gramos, no el medio gramo del cúmulo.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Más agua en cada metro",
+              "emphasis": "Más agua"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Y tiene motor propio. Al condensarse, el vapor libera calor. Ese calor calienta el aire, y el aire sube todavía más.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Un motor de calor",
+              "emphasis": "calor"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Haz la cuenta con un bloque de diez por diez por diez kilómetros y un gramo por metro cúbico: un millón de toneladas. El cúmulo tenía quinientas.",
+            "visual": {
+              "kind": "compare",
+              "headline": "Otra liga",
+              "emphasis": "liga",
+              "sub": "Estimación de orden de magnitud",
+              "left": {
+                "label": "Cúmulo",
+                "value": "500 t"
+              },
+              "right": {
+                "label": "Cumulonimbo",
+                "value": "≈1.000.000 t"
+              }
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Es una estimación aproximada, pero da la idea: unas dos mil veces más agua que nuestra nube de algodón.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Veces más agua",
+              "emphasis": "más agua",
+              "value": 2000,
+              "decimals": 0,
+              "prefix": "×",
+              "suffix": ""
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Dentro caben incluso piedras de granizo, sostenidas por corrientes ascendentes que en las tormentas más fuertes superan los cien kilómetros por hora.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Granizo en suspensión",
+              "emphasis": "Granizo",
+              "sub": "Corrientes de más de 100 km/h"
+            },
+            "mediaQuery": "hailstorm hail falling"
+          },
+          {
+            "text": "Y cuando por fin descarga, la lluvia arrastra aire frío hacia abajo. Es la ráfaga fresca que notas justo antes del chaparrón.",
+            "visual": {
+              "kind": "broll",
+              "headline": "La ráfaga antes de la lluvia",
+              "emphasis": "ráfaga"
+            },
+            "mediaQuery": "storm wind trees"
+          },
+          {
+            "text": "Una tormenta fuerte puede dejar más de treinta litros por metro cuadrado en una sola hora. Son treinta kilos de agua sobre cada metro.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Lluvia muy fuerte",
+              "emphasis": "muy fuerte",
+              "label": "En una hora",
+              "value": 30,
+              "decimals": 0,
+              "prefix": "+",
+              "suffix": " l/m²"
+            },
+            "mediaQuery": "heavy rain street"
+          },
+          {
+            "text": "Y ahora, la pregunta que da vértigo. Si ponemos en una báscula todas las nubes y todo el vapor del planeta, ¿qué marca?",
+            "visual": {
+              "kind": "fact",
+              "headline": "Todo el cielo en una báscula",
+              "emphasis": "báscula"
+            },
+            "mediaQuery": null
+          }
+        ]
+      },
+      {
+        "heading": "El peso de todo el cielo",
+        "scenes": [
+          {
+            "text": "Empecemos por la superficie. En cualquier momento, las nubes cubren cerca del sesenta y siete por ciento de la Tierra. Dos tercios.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Un planeta nublado",
+              "emphasis": "nublado",
+              "label": "Cobertura de nubes",
+              "value": 67,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " %"
+            },
+            "mediaQuery": "earth from space clouds"
+          },
+          {
+            "text": "Y la atmósfera guarda unos doce mil novecientos kilómetros cúbicos de agua, sumando vapor, gotitas y cristales de hielo.",
+            "visual": {
+              "kind": "stat",
+              "headline": "El agua del cielo",
+              "emphasis": "cielo",
+              "value": 12900,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " km³"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Eso son casi trece billones de toneladas. Parece enorme, pero es solo el cero coma cero cero uno por ciento del agua del planeta.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Solo el 0,001 %",
+              "emphasis": "0,001 %",
+              "sub": "Casi 13 billones de toneladas"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Si toda esa agua cayera a la vez, cubriría la Tierra entera con una capa de apenas dos centímetros y medio.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Una capa de 2,5 cm",
+              "emphasis": "2,5 cm"
+            },
+            "mediaQuery": "rain on ocean"
+          },
+          {
+            "text": "Lo sorprendente es el ritmo. Cada año se evaporan y vuelven a caer cerca de quinientos mil kilómetros cúbicos de agua.",
+            "visual": {
+              "kind": "stat",
+              "headline": "El gran reciclaje",
+              "emphasis": "reciclaje",
+              "label": "Al año",
+              "value": 500000,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " km³"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Es decir, el cielo vacía y vuelve a llenar su depósito unas cuarenta veces al año. Una molécula de agua pasa allí unos nueve días.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Nueve días en el aire",
+              "emphasis": "Nueve días"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Nueve días en la atmósfera frente a unos tres mil años de media en el océano. El cielo es el tramo exprés del ciclo del agua.",
+            "visual": {
+              "kind": "compare",
+              "headline": "El tramo exprés",
+              "emphasis": "exprés",
+              "left": {
+                "label": "Atmósfera",
+                "value": "9 días"
+              },
+              "right": {
+                "label": "Océano",
+                "value": "3.000 años"
+              }
+            },
+            "mediaQuery": null
+          }
+        ]
+      },
+      {
+        "heading": "La nube que atraviesas",
+        "scenes": [
+          {
+            "text": "Y todo esto lo has tocado alguna vez. La niebla es exactamente eso: una nube a ras de suelo.",
+            "visual": {
+              "kind": "broll",
+              "headline": "La niebla es una nube",
+              "emphasis": "niebla"
+            },
+            "mediaQuery": "foggy forest morning"
+          },
+          {
+            "text": "En una habitación de treinta metros cúbicos llena de niebla muy densa habría, como mucho, unos quince gramos de agua. Una cucharada.",
+            "visual": {
+              "kind": "stat",
+              "headline": "Una cucharada de nube",
+              "emphasis": "cucharada",
+              "label": "Habitación de 30 m³",
+              "value": 15,
+              "decimals": 0,
+              "prefix": "",
+              "suffix": " g"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "Por eso caminas dentro de una nube y apenas te mojas. El agua está repartida en millones de gotitas separadas por aire.",
+            "visual": {
+              "kind": "broll",
+              "headline": "Dentro de la nube",
+              "emphasis": "Dentro"
+            },
+            "mediaQuery": "person walking fog"
+          },
+          {
+            "text": "Una nube no es ligera. Es pesadísima, pero está tan repartida que el aire puede con ella. Ese es todo el truco.",
+            "visual": {
+              "kind": "quote",
+              "headline": "Pesada, pero repartida",
+              "emphasis": "repartida"
+            },
+            "mediaQuery": null
+          },
+          {
+            "text": "La próxima vez que veas un cúmulo, piensa en cien elefantes sostenidos por aire que sube y por gotas que nunca terminan de caer.",
+            "visual": {
+              "kind": "fact",
+              "headline": "Cien elefantes ahí arriba",
+              "emphasis": "Cien elefantes"
+            },
+            "mediaQuery": "clouds over field"
+          },
+          {
+            "text": "¿Qué otra cosa cotidiana crees que pesa mucho más de lo que parece? Déjalo en comentarios: puede ser la próxima cuenta que hagamos.",
+            "visual": {
+              "kind": "outro",
+              "headline": "¿Qué pesamos después?",
+              "emphasis": "después"
+            },
+            "mediaQuery": null
+          }
+        ]
+      }
+    ]
+  },
+  "short": {
+    "title": "Una nube pesa 500 toneladas (y no se cae)",
+    "description": "Un cúmulo pequeño guarda unas 500 toneladas de agua, lo mismo que 100 elefantes. Así se calcula, y por eso no se cae. #ciencia #nubes #curiosidades",
+    "scenes": [
+      {
+        "text": "Una nube pequeña pesa quinientas toneladas.",
+        "visual": {
+          "kind": "hook",
+          "headline": "500 toneladas flotando",
+          "emphasis": "500 toneladas"
+        },
+        "mediaQuery": "cumulus cloud blue sky"
+      },
+      {
+        "text": "Un cúmulo típico ocupa un kilómetro cúbico, con medio gramo de agua en cada metro cúbico. Multiplica: quinientas toneladas, como cien elefantes.",
+        "visual": {
+          "kind": "stat",
+          "headline": "Como cien elefantes",
+          "emphasis": "cien elefantes",
+          "label": "Agua de un cúmulo",
+          "value": 500,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": " t"
+        },
+        "mediaQuery": "african elephant herd"
+      },
+      {
+        "text": "¿Y por qué no se cae? En realidad sí cae, pero cada gotita mide diez micras y baja a un centímetro por segundo.",
+        "visual": {
+          "kind": "fact",
+          "headline": "Sí cae, pero muy despacio",
+          "emphasis": "muy despacio"
+        },
+        "mediaQuery": null
+      },
+      {
+        "text": "Mientras tanto, el aire dentro del cúmulo sube a varios metros por segundo. La gotita pierde la carrera.",
+        "visual": {
+          "kind": "compare",
+          "headline": "Una carrera desigual",
+          "emphasis": "desigual",
+          "left": {
+            "label": "La gotita cae",
+            "value": "1 cm/s"
+          },
+          "right": {
+            "label": "El aire sube",
+            "value": "varios m/s"
+          }
+        },
+        "mediaQuery": null
+      },
+      {
+        "text": "Y el aire de ese mismo kilómetro cúbico pesa un millón de toneladas. El agua es solo una pizca.",
+        "visual": {
+          "kind": "broll",
+          "headline": "Casi todo es aire",
+          "emphasis": "aire"
+        },
+        "mediaQuery": "clouds aerial view"
+      },
+      {
+        "text": "Para que llueva, un millón de gotitas tienen que unirse en una sola gota.",
+        "visual": {
+          "kind": "stat",
+          "headline": "Gotitas por gota de lluvia",
+          "emphasis": "Gotitas",
+          "value": 1000000,
+          "decimals": 0,
+          "prefix": "",
+          "suffix": ""
+        },
+        "mediaQuery": null
+      },
+      {
+        "text": "Hasta entonces, la nube sigue ahí, quieta y pesadísima. Así que la próxima vez que mires arriba, recuerda:",
+        "visual": {
+          "kind": "outro",
+          "headline": "Mira arriba",
+          "emphasis": "arriba"
+        },
+        "mediaQuery": "clouds over field"
+      }
+    ]
+  }
+}

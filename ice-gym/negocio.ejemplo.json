@@ -1,0 +1,77 @@
+{
+  "marca": {
+    "nombre": "Ice Gym",
+    "logo": ["ICE", "GYM"],
+    "logoImagen": null,
+    "acento": "#5CE1FF",
+    "slug": "icegym",
+    "dominio": "icegym.es"
+  },
+  "centros": [
+    {
+      "barrio": "Chamberí",
+      "slug": "chamberi",
+      "ciudad": "Madrid",
+      "direccion": "Calle Bravo Murillo 112, 28020 Madrid",
+      "telefono": "+34 910 55 12 01",
+      "aforo": 320,
+      "horario": "L-V 6:30-23:30 · S-D 8:00-22:00",
+      "foto": "/landing/fachada-frontal.jpg"
+    }
+  ],
+  "tarifas": [
+    {
+      "nombre": "Comfort",
+      "slug": "comfort",
+      "cuotaMensual": 29.99,
+      "matricula": 19.99,
+      "descripcion": "Todos los centros de la cadena, clases colectivas incluidas y un invitado al mes.",
+      "incluye": ["Acceso a los 3 centros", "Clases colectivas ilimitadas", "1 invitado al mes"],
+      "destacada": true
+    }
+  ],
+  "permanencia": false,
+  "clases": [
+    {
+      "nombre": "Ice Cycle",
+      "disciplina": "Ciclo",
+      "monitor": "Nerea Gil",
+      "sala": "Sala Ciclo",
+      "dias": [1, 2, 3, 4, 5],
+      "hora": "07:30",
+      "duracionMin": 45,
+      "plazas": 24,
+      "nivel": "todos",
+      "centros": ["chamberi"]
+    }
+  ],
+  "contenido": {
+    "portadaTitulo": ["Entrena", "en frío."],
+    "propuesta": "Acceso libre, clases colectivas y sin permanencia.",
+    "salas": [
+      { "nombre": "Poleas", "texto": "Torres de polea doble a cada lado del pasillo para trabajar cada ángulo con carga guiada.", "foto": "/landing/sala-poleas.jpg" }
+    ],
+    "marquesina": ["Fuerza", "Cardio", "Ciclo", "Funcional", "Peso libre", "Poleas"],
+    "manifiesto": "Abres el torno, entrenas a tu *ritmo y vuelves mañana. Pesas, cardio, ciclo y funcional en Madrid, Barcelona y Valencia.",
+    "tituloCentros": ["Tres ciudades.", "El mismo hielo."]
+  },
+  "contacto": {
+    "email": null,
+    "redes": { "instagram": null, "tiktok": null },
+    "razonSocial": null,
+    "cif": null
+  },
+  "fotos": {
+    "origen": "propias | stock | ia | plantilla-solo-local",
+    "carpeta": null
+  },
+  "region": { "zonaHoraria": "Europe/Madrid", "locale": "es-ES", "moneda": "EUR" },
+  "crm": {
+    "incluir": true,
+    "datosEjemplo": true,
+    "equipo": [
+      { "nombre": "Marta", "apellidos": "Ruiz Olmedo", "email": "marta.ruiz@icegym.es", "puesto": "Directora comercial" }
+    ]
+  },
+  "infra": { "supabase": "pendiente", "vercel": "pendiente", "dominioCrm": null }
+}

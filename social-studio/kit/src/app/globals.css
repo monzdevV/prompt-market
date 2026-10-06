@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+/*
+ * Manny — tema «estudio nocturno».
+ * Grafito y niebla con un solo acento cian (se usa poco: foco, progreso, estado activo).
+ * Titulares en Instrument Serif, texto en Geist, etiquetas en Geist Mono.
+ */
+:root {
+  color-scheme: dark;
+  --bg: #0b0d0e;
+  --bg-2: #0f1213;
+  --surface: #131618;
+  --surface-2: #1a1e20;
+  --surface-3: #22272a;
+  --border: #22282b;
+  --border-strong: #353d41;
+  --text: #e9edee;
+  --muted: #8e9a9f;
+  --faint: #5d686d;
+  /* acento: texto/bordes; accent-strong: fondos con texto blanco (contraste AA) */
+  --accent: #5ee9ff;
+  --accent-strong: #0e7490;
+  --accent-soft: rgb(94 233 255 / 0.09);
+  /* botón principal: niebla sobre grafito */
+  --primary: #eef2f3;
+  --primary-fg: #0e1112;
+  --ok: #6fdc9b;
+  --ok-strong: #1d7a48;
+  --ok-soft: rgb(111 220 155 / 0.1);
+  --warn: #f0b85a;
+  --warn-soft: rgb(240 184 90 / 0.1);
+  --bad: #ff7d72;
+  --bad-strong: #b8352b;
+  --bad-soft: rgb(255 125 114 / 0.1);
+  --ring: rgb(94 233 255 / 0.45);
+  /* amarillo de subtítulo: la palabra resaltada del gancho de un vídeo */
+  --sub: #ffe14d;
+  --shadow: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 12px 32px -18px rgb(0 0 0 / 0.8);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  /* degradado de Manny: cian (acento) → menta → amarillo de subtítulo */
+  --brand: linear-gradient(100deg, #5ee9ff 0%, #8ef0c6 50%, #ffe14d 100%);
+  /* el mismo degradado en vertical, para filos finos */
+  --brand-v: linear-gradient(180deg, #5ee9ff 0%, #8ef0c6 50%, #ffe14d 100%);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ok-strong: var(--ok-strong);
+  --color-bad-strong: var(--bad-strong);
+  --color-fg: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-sub: var(--sub);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument);
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 12% -10%, rgb(94 233 255 / 0.05), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgb(233 237 238 / 0.035), transparent 55%),
+    /* un leve rastro amarillo de la marca, abajo a la derecha */
+    radial-gradient(900px 600px at 95% 110%, rgb(255 225 77 / 0.03), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  color: var(--text);
+}
+
+::selection {
+  background: rgb(94 233 255 / 0.25);
+  color: var(--text);
+}
+
+/* Grano de película por encima de todo (sin blend-mode: no repinta la página al hacer scroll) */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Foco visible solo con teclado, en todo lo interactivo */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@utility card {
+  @apply relative rounded-2xl border border-line bg-surface;
+  box-shadow: var(--shadow);
+}
+@utility card-hover {
+  @apply transition-[border-color,transform] duration-300;
+  transition-timing-function: var(--ease);
+  &:hover {
+    border-color: var(--border-strong);
+  }
+}
+@utility btn {
+  @apply inline-flex h-9 items-center justify-center gap-2 rounded-full px-4 text-sm font-medium whitespace-nowrap transition-[background-color,color,opacity,transform,border-color] duration-200 select-none active:scale-[0.97] disabled:pointer-events-none disabled:opacity-45;
+  transition-timing-function: var(--ease);
+}
+@utility btn-sm {
+  @apply h-7 gap-1.5 px-3 text-xs;
+}
+@utility btn-primary {
+  @apply btn bg-primary text-primary-fg hover:bg-white;
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.08), 0 8px 24px -12px rgb(233 237 238 / 0.45);
+}
+@utility btn-ghost {
+  @apply btn border border-line-strong bg-surface-2/60 text-fg hover:border-muted/60 hover:bg-surface-3;
+}
+@utility btn-danger {
+  @apply btn text-bad hover:bg-bad-soft;
+}
+@utility input {
+  @apply w-full rounded-xl border border-line-strong bg-bg-2 px-3.5 py-2.5 text-sm transition-[border-color,box-shadow] duration-200 placeholder:text-faint focus:border-accent/70;
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--ring);
+  }
+}
+@utility label {
+  @apply mb-1.5 block text-sm font-medium;
+}
+@utility hint {
+  @apply text-xs text-muted;
+}
+/* Etiqueta tipo «HUD»: mono, mayúsculas y espaciada */
+@utility eyebrow {
+  @apply font-mono text-[11px] font-medium tracking-[0.18em] text-muted uppercase;
+}
+/* Texto con el degradado de la marca */
+@utility brand-text {
+  background: var(--brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* Fondo con el degradado de la marca (filos y distintivos pequeños, nunca superficies grandes) */
+@utility brand-bg {
+  background: var(--brand);
+}
+@utility brand-bg-v {
+  background: var(--brand-v);
+}
+/* Titular editorial */
+@utility display {
+  @apply font-serif font-normal tracking-[-0.01em];
+}
+@utility skeleton {
+  @apply animate-pulse rounded-lg bg-surface-2;
+}
+@utility hairline {
+  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+  height: 1px;
+}
+
+/* Entrada suave al cargar (con escalonado opcional vía style="--d: 120ms") */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+@utility rise {
+  animation: rise 0.8s var(--ease) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes halo {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes scan {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* En pantallas táctiles, objetivos de al menos 36 px */
+@media (pointer: coarse) {
+  .btn-sm {
+    min-height: 2.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

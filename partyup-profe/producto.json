@@ -1,0 +1,48 @@
+{
+  "slug": "partyup",
+  "codigo": "PUP",
+  "titulo": "PartyUp · app social de fiestas",
+  "subtitulo": "App móvil de fiestas y previas para iOS y Android con salas compartidas, retos, tickets de oferta y 6 juegos.",
+  "categoria": "app móvil",
+  "stack": [
+    "Expo SDK 54",
+    "React Native 0.81",
+    "Reanimated 4",
+    "Skia",
+    "Supabase",
+    "RevenueCat",
+    "EAS"
+  ],
+  "precio": 99,
+  "precioBorrador": true,
+  "dificultad": "avanzada",
+  "tiempoInstalacion": "2-4 h con agente hasta tu móvil · 1-2 días hasta enviarla a revisión",
+  "requisitos": [
+    "Node.js 20+ y un móvil Android o iPhone",
+    "Cuentas de Expo, Supabase, Google Cloud y, si quieres cobrar, RevenueCat",
+    "Google Play (25 $) y Apple Developer (99 $/año) para publicar",
+    "Una política de privacidad publicada en una URL"
+  ],
+  "preguntas": 25,
+  "publicado": true,
+  "stripePaymentLink": "",
+  "captura": "",
+  "faq": [
+    {
+      "p": "¿Se puede probar en Expo Go?",
+      "r": "No. Usa módulos nativos (login con Apple y Google, compras), así que se prueba con un development build que se instala en el móvil. El prompt te guía."
+    },
+    {
+      "p": "¿Cuánto cuesta publicarla en las tiendas?",
+      "r": "Google Play cobra 25 $ una vez y Apple Developer 99 $ al año. Las cuentas personales nuevas de Google Play hacen antes una prueba cerrada con 12 testers durante 14 días."
+    },
+    {
+      "p": "¿Los vídeos y GIF se pueden publicar tal cual?",
+      "r": "No. Son de ejemplo y su licencia no está documentada: sustitúyelos por material propio o con licencia antes de publicar."
+    },
+    {
+      "p": "¿Trae panel de administración?",
+      "r": "No. La gestión se hace desde el panel de Supabase, y el alta de locales asociados con una consulta SQL que viene en el prompt."
+    }
+  ]
+}

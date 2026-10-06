@@ -1,0 +1,48 @@
+{
+  "slug": "tubegen",
+  "codigo": "TBG",
+  "titulo": "TubeGen",
+  "subtitulo": "Fábrica de episodios para YouTube: guion con fuentes, voz, vídeo largo, Short y miniatura renderizados con Remotion.",
+  "categoria": "vídeo",
+  "stack": [
+    "Node.js 22",
+    "Remotion 4",
+    "React 19",
+    "TypeScript",
+    "Python + edge-tts",
+    "ffmpeg",
+    "API de YouTube"
+  ],
+  "precio": 59,
+  "precioBorrador": true,
+  "dificultad": "avanzada",
+  "tiempoInstalacion": "30-60 min con agente, más el primer render · 2-3 h en chat",
+  "requisitos": [
+    "Una IA: agente (Claude Code, Cursor, Windsurf, Codex) o chat (claude.ai, ChatGPT)",
+    "Node.js 22+, Python 3.10+, ffmpeg y unos 2 GB libres",
+    "Claude Code con tu suscripción o una clave de API de Anthropic para los guiones",
+    "Opcional: claves gratis de Pexels y YouTube; ElevenLabs si quieres mejor voz"
+  ],
+  "preguntas": 25,
+  "publicado": true,
+  "stripePaymentLink": "",
+  "captura": "",
+  "faq": [
+    {
+      "p": "¿Publica los vídeos solo?",
+      "r": "No. Sube en privado o programado y nunca publica sin tu revisión. Cada episodio genera un REVISAR.md con una checklist."
+    },
+    {
+      "p": "¿Cuánto cuesta usarlo cada mes?",
+      "r": "Con Claude Code y voz gratuita, 0 € extra. Con la API de Claude y dos episodios por semana, unos 2-3 $ al mes (precios de septiembre de 2026; compruébalos)."
+    },
+    {
+      "p": "¿Puedo probarlo sin claves?",
+      "r": "Sí. El kit trae un Short de ejemplo ya producido que se renderiza en un par de minutos."
+    },
+    {
+      "p": "¿YouTube monetiza este contenido?",
+      "r": "Depende de cómo lo uses. YouTube retira la monetización al contenido producido en masa. El sistema exige datos con fuente y rota formatos, pero revisar cada guion es tu trabajo."
+    }
+  ]
+}

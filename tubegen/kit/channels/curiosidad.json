@@ -1,0 +1,120 @@
+{
+  "id": "curiosidad",
+  "name": "Curiosidad Máxima",
+  "handle": "@curiosidadmaxima",
+  "lang": "es",
+  "region": "ES",
+  "audience": "Adultos de 25 a 54 años de España y Latinoamérica con curiosidad por la ciencia, la historia, la tecnología y los datos. No es contenido infantil.",
+  "niche": "Curiosidades explicadas con datos: ciencia, cuerpo humano, animales, historia, geografía, tecnología y escalas. Cada vídeo responde una pregunta concreta con cifras verificables y comparaciones visuales.",
+  "voiceRules": "Español neutro (entendible en España y Latinoamérica), frases cortas, tono cercano y preciso, sin exagerar ni inventar. Nada de relleno ni 'en este vídeo vamos a ver'. Cada frase aporta un dato, una imagen mental o una pregunta.",
+  "pillars": [
+    {
+      "id": "pregunta",
+      "desc": "Una pregunta intrigante respondida paso a paso (¿Qué pasaría si...? ¿Por qué...?)"
+    },
+    {
+      "id": "escala",
+      "desc": "Comparaciones de tamaño, tiempo, dinero o distancia que cambian la perspectiva"
+    },
+    {
+      "id": "ranking",
+      "desc": "Top 7-10 con datos y fuentes, ordenado de menos a más sorprendente"
+    },
+    {
+      "id": "historia",
+      "desc": "Un episodio histórico poco conocido contado como una historia con giro"
+    },
+    {
+      "id": "cuerpo",
+      "desc": "Cómo funciona algo del cuerpo humano o de un animal, con cifras"
+    }
+  ],
+  "seeds": [
+    {
+      "q": "curiosidades ciencia",
+      "lang": "es"
+    },
+    {
+      "q": "qué pasaría si",
+      "lang": "es"
+    },
+    {
+      "q": "datos curiosos",
+      "lang": "es"
+    },
+    {
+      "q": "historia poco conocida",
+      "lang": "es"
+    },
+    {
+      "q": "comparación de tamaño",
+      "lang": "es"
+    },
+    {
+      "q": "what if science",
+      "lang": "en"
+    },
+    {
+      "q": "scale comparison",
+      "lang": "en"
+    },
+    {
+      "q": "fascinating facts",
+      "lang": "en"
+    },
+    {
+      "q": "human body explained",
+      "lang": "en"
+    },
+    {
+      "q": "history nobody talks about",
+      "lang": "en"
+    }
+  ],
+  "avoid": "Política, religión, consejos médicos o financieros personalizados, tragedias recientes, contenido sexual, rumores sin fuente, temas infantiles.",
+  "long": {
+    "minutes": 9,
+    "maxMinutes": 14
+  },
+  "short": {
+    "seconds": 45
+  },
+  "cadence": {
+    "longPerWeek": 2,
+    "shortsPerDay": 1,
+    "publishHourLocal": 18,
+    "timezone": "Europe/Madrid"
+  },
+  "voice": {
+    "provider": "edge",
+    "edgeVoice": "es-ES-AlvaroNeural",
+    "rate": "+6%",
+    "elevenVoiceId": "",
+    "elevenModel": "eleven_multilingual_v2"
+  },
+  "theme": {
+    "bg": "#13110f",
+    "fg": "#f3ede2",
+    "muted": "#b8b0a3",
+    "accent": "#ff5b1f",
+    "accent2": "#8fb3a4"
+  },
+  "youtube": {
+    "categoryId": "27",
+    "defaultTags": [
+      "curiosidades",
+      "datos curiosos",
+      "ciencia",
+      "sabías que"
+    ],
+    "privacy": "private",
+    "madeForKids": false,
+    "containsSyntheticMedia": false,
+    "disclosureLine": "Guion escrito con ayuda de IA y revisado por una persona. Narración con voz sintética."
+  },
+  "music": {
+    "dir": "assets/music",
+    "volume": 0.06
+  },
+  "autoPublish": false
+}

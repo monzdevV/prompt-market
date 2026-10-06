@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+/*
+  Mundo: albarán de expedición. Dos tintas sobre suelo frío.
+  - «tinta» (blanco roto en oscuro / casi negro en claro): texto, reglas y cajas.
+  - «senal» (naranja expedición): SOLO campos sólidos (barra de etiqueta, precio, CTA, sellos).
+    Sobre la señal, el texto siempre es «sobre-senal» (casi negro): 7,6:1.
+  - «senal-texto»: la señal cuando tiene que ser texto sobre el suelo (enlaces activos, cifras).
+  Contrastes medidos sobre «suelo»: tinta 16:1, tinta-2 8,1:1, tinta-3 4,9:1 (oscuro);
+  tinta 18:1, tinta-2 8,6:1, tinta-3 5,0:1, senal-texto 5,3:1 (claro).
+*/
+:root {
+  color-scheme: dark;
+  --suelo: #0c0d0f;
+  --placa: #131518;
+  --placa-2: #1b1e22;
+  --linea: #2b2f35;
+  --tinta: #edebe6;
+  --tinta-2: #a5a8ab;
+  --tinta-3: #7f8388;
+  --senal: #ff6b1a;
+  --senal-texto: #ff8a4c;
+  --sobre-senal: #0c0d0f;
+  --seleccion: #ff6b1a;
+
+  --ease-salida: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-corta: 160ms;
+  --dur-media: 320ms;
+  --dur-larga: 700ms;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --suelo: #f6f6f4;
+    --placa: #ffffff;
+    --placa-2: #ebebe8;
+    --linea: #d2d2cd;
+    --tinta: #0c0d0f;
+    --tinta-2: #44474c;
+    --tinta-3: #5f6368;
+    --senal: #ff6b1a;
+    --senal-texto: #b54500;
+    --sobre-senal: #0c0d0f;
+  }
+}
+
+@theme inline {
+  --color-suelo: var(--suelo);
+  --color-placa: var(--placa);
+  --color-placa-2: var(--placa-2);
+  --color-linea: var(--linea);
+  --color-tinta: var(--tinta);
+  --color-tinta-2: var(--tinta-2);
+  --color-tinta-3: var(--tinta-3);
+  --color-senal: var(--senal);
+  --color-senal-texto: var(--senal-texto);
+  --color-sobre-senal: var(--sobre-senal);
+
+  --font-sans: var(--fuente-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--fuente-mono), ui-monospace, "Cascadia Mono", monospace;
+
+  --breakpoint-xs: 26rem;
+}
+
+/* Titular de etiqueta: Archivo estrechada al máximo, en mayúsculas. */
+@utility rotulo {
+  font-family: var(--font-sans);
+  font-stretch: 62%;
+  font-variation-settings: "wdth" 62;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+}
+
+@utility rotulo-medio {
+  font-family: var(--font-sans);
+  font-stretch: 75%;
+  font-variation-settings: "wdth" 75;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+/* Etiquetas de campo del albarán: pequeñas, versalitas, sin mono. */
+@utility campo {
+  font-family: var(--font-sans);
+  font-stretch: 100%;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tinta-3);
+}
+
+@utility cifras {
+  font-variant-numeric: tabular-nums;
+}
+
+html {
+  background: var(--suelo);
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--suelo);
+  color: var(--tinta);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--seleccion);
+  color: var(--sobre-senal);
+}
+
+/* Foco solo con teclado, en señal y con hueco: visible sobre cualquier fondo. */
+:focus-visible {
+  outline: 2px solid var(--senal);
+  outline-offset: 3px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+html {
+  scrollbar-color: var(--linea) var(--suelo);
+}
+
+/* Pulsación: respuesta inmediata, sin rebote. */
+.pulsable {
+  transition: transform var(--dur-corta) var(--ease-salida), background-color var(--dur-corta) ease,
+    color var(--dur-corta) ease;
+}
+.pulsable:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* Impresora térmica: la etiqueta sale de arriba a abajo. */
+@keyframes imprimir {
+  from {
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(-6px);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+.impresion {
+  animation: imprimir var(--dur-larga) var(--ease-salida) both;
+}
+
+/* Fragmento del prompt: el texto se corta en el precinto. */
+.desvanece-abajo {
+  mask-image: linear-gradient(to bottom, #000 78%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  .pulsable:active:not(:disabled) {
+    transform: none;
+  }
+}
